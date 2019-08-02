@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(https://imgur.com/vuggCtC.gif);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+}
+.KhanhĐẹpTrai {
+	width: 700px;
+	height: 700px;
+	text-align: center;
+}
+
+.picture {
+	height: 200px;
+	width: 200px;
+	border: 0px solid white;
+	background-color: red;
+	margin: 1px;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	transition: 0.5s ease-out;
+}
+
+.picture img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.picture:hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}

@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: top;
+	margin-top: 200px;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+}
+.text-box {
+	text-align: center;
+	font-family: sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+
+.text-animation-box {
+	position: relative;
+	overflow: hidden;
+}
+
+.text-animation-box span {
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+}
+
+.learning {
+	background-color: #4C9A2A;
+	animation: learning 1.5s forwards;
+	visibility: hidden;
+}
+
+@keyframes learning{
+	from { visibility: visible;}
+	to { visibility: hidden;}
+}
+
+.coding {
+	background-color: #EC7216;
+	position: absolute;
+	bottom: 0;
+	opacity: 0;
+	animation: coding 1.5s forwards;
+	animation-delay: 1.4s;
+	z-index: 2;
+}
+
+@keyframes coding {
+	0% { bottom: 100%; opacity: 1}
+	25% { bottom: 0; opacity: 1 }
+	50% { bottom: 0; opacity: 1}
+	100% { bottom: -100%; opacity: 1 }
+}
+
+.teaching {
+	background-color: violet;
+	position: absolute;
+	top: 100%;
+	animation: teaching 1s forwards;
+	animation-delay: 2.2s;
+	z-index: 3;
+} 
+
+@keyframes teaching{
+	to {top: 0}
+}

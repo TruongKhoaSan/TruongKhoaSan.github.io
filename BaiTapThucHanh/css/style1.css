@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: top;
+	margin-top: 200px;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+}
+.TráiTim {
+	width: 400px;
+	height: 300px;
+	animation: beat 2s infinite;
+}
+
+@keyframes beat{
+	0% { transform: scale(1);}
+	15% { transform: scale(1); }
+	25% { transform: scale(1.1);}
+	50% { transform: scale(1);}
+	75% { transform: scale(1.2);}
+	100% { transform: scale(1);}
+}

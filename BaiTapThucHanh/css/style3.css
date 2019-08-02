@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: black;
+}
+
+
+.image_box {
+	width: 600px;
+	height: 400px;
+	background-image: url(https://i.pinimg.com/originals/be/92/3b/be923b8fa45223fdf0b3a02cd4304484.jpg);
+
+	margin: 100px auto;
+
+	box-shadow:  0 0 60px rgba(0,0,0,1);
+
+	animation: fade 10s infinite;
+}
+
+@keyframes fade{
+	20%{background-image: url(http://blogtraitim.info/wp-content/uploads/2018/06/xem-anh-hoat-hinh-de-thuong-buon-600x400.jpg);
+	}
+	40%{background-image: url(http://blogtraitim.info/wp-content/uploads/2018/06/nhung-hinh-anh-hoat-hinh-tam-trang-buon-nhung-vo-cung-de-thuong-4-600x400.jpg);
+	}
+	60%{background-image: url(http://blogtraitim.info/wp-content/uploads/2018/06/nhung-hinh-anh-tam-trang-buon-khoc-600x400.jpg);
+	}
+	80%{background-image: url(https://edge2.cdn.i-com.vn/image/600x400/smart/image.i-com.vn:1937//Uploads/images/thienthanchet-ngang.jpeg);
+	}
+	100%{background-image: url(http://blogtraitim.info/wp-content/uploads/2018/06/anh-hoat-hinh-dep-ve-tinh-yeu-buon-2-600x400.jpg);
+	}
+	
+
+}
