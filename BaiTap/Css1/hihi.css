@@ -1,5 +1,6 @@
 body{
 	margin:0px;
+	background-image: url(https://hungsoi.com/wp-content/uploads/2019/05/hinh-nen-dota2-1.jpg);
 }
 .menu{
 	height: 500px;
@@ -20,7 +21,7 @@ body{
 }
 a{
 	text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
 }
 li{
 	margin-bottom:10px;
@@ -32,6 +33,7 @@ li{
 	left: 292px;
     top: 25px;
     z-index: 1;
+
 }
 img{
 	max-width:40%;
@@ -50,4 +52,28 @@ h1{
 }
 .backtop>img{
 	max-width:85px;
+}
+.bodyweb p{
+	color: #ffffff;
+}
+#mot {
+	color: #ffffff;
+}
+#hai {
+	color: #ffffff;
+}
+#ba {
+	color: #ffffff;
+}
+#bon {
+	color: #ffffff;
+}
+#nam {
+	color: #ffffff;
+}
+#sau {
+	color: #ffffff;
+}
+#bay {
+	color: #ffffff;
 }
