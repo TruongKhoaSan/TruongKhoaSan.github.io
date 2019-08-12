@@ -1,0 +1,268 @@
+*{
+  box-sizing:border-box;
+  
+}
+body{
+  background-image: url(https://rgb.vn/ideas/wp-content/uploads/2016/05/nghe-thuat-chup-anh-mon-an-loi-cuon-011.jpg);
+  font-family: Roboto,sans-serif;
+}
+a{
+  text-decoration-color: transparent;
+  color: #ffffff;
+}
+
+dd{
+  margin:0px;
+  text-transform:none;
+  font-family: auto;
+  font-size: 15px;
+  padding-left:10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+dd:hover{
+  background: rgba(0,0,0,0.6);
+}
+dt{
+  font-size: 14px;
+  padding-left:10px;
+  padding-top:8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+.menu-chinh {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.menu-chinh>.menu{
+padding-left: 300px;
+padding-right: 300px;
+
+}
+.menu{
+  background-color: rgba(0,0,0,0.6);
+  
+}
+nav{
+  text-transform: uppercase;
+  width:1250px;
+  margin:auto;
+
+}
+.container{
+  padding-left: 48px;
+  list-style:none;
+}
+.container>li{
+  color: #ffffff;
+
+  display:inline-block;
+  
+  position:relative;
+}
+.container>li:hover>a{
+  color: #ffffff;
+}
+
+
+.container>li>a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    padding:15px;
+    color: #ffffff;
+    display:inline-block;
+}
+
+.box{
+  background-color: rgba(0,0,0,0.6);
+  display:none;
+  position:absolute;
+  top: 100%;
+  left:0%;
+  width:654px;
+  font-size: 15px;
+  
+}
+.box:hover li {
+  background-color: none;
+  color: #ffffff;
+}
+
+
+.box>dl{
+  background-color: none;
+  display:flex;
+  color: #ffffff;
+  
+}
+.box>dl>div{
+  background-color: none;
+  width:calc(100% / 3);
+}
+.boxli:hover .box{
+  display:block;
+}
+.boxns>.box{
+      width: 166px;
+}
+.boxnx>.box>dl>div{
+  color: #ffffff;
+  background-color: rgba(0,0,0,0.6);
+  width:100%;
+}
+.backtop{
+  position:fixed;
+  right:27px;
+  bottom:200px;
+  z-index:10;
+}
+.backtop>img{
+  max-width:100px;
+}
+ul{
+  list-style: none;
+  padding-left:0px;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+li{
+  padding-left:10px;
+}
+li>span{
+    float:right;
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 11px;
+    display:none;
+}
+.main{
+    padding: 5px;
+    background-color: rgba(0,0,0,0.6);
+    width: 250px;
+    height: auto;
+    font-family: Roboto-Regular;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.neo{
+  position:relative;
+}
+.gan{
+  position:absolute;
+  top:0%;
+  left:100%;
+  display:none;
+}
+li:hover>.gan{
+  display:block;
+}
+
+li:hover{
+  color: none;
+  background:rgba(0,0,0,0.6);
+}
+li:hover>span{
+  display:inline;
+}
+li:hover>a{
+  color: #ffffff;
+}
+.khung{
+  padding-left: 200px;
+  padding-right: 200px;
+  height: 180px;
+  margin-top: 5px;
+  padding: 10px 0 10px 0;
+}
+.bot-web{
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+#footweb{
+  height:70px;
+  background: rgba(0,0,0,0.6);
+  clear: both;
+  color:white;
+  text-align: left;
+  padding-top: 0;
+}
+.quaylai {
+  width: 40px;
+  height: 40px;
+  position:fixed;
+  right: 23px;
+  bottom:150px;
+  z-index: 99;
+ }
+ .quaylai>img {
+  max-width: 80px;
+ }
+ .trang-tri{
+  position:fixed;
+  left: 27px;
+  bottom:200px;
+  z-index:10;
+}
+.trang-tri>img{
+  max-width:200px;
+}
+ .trang-tri1{
+  position:fixed;
+  left: 27px;
+  bottom:350px;
+  z-index:10;
+}
+.trang-tri1>img{
+  max-width:200px;
+}
+div.container2{
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 550px;
+    left: 55%;
+    transform: translate(-50%,-50%);
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out ;
+}
+
+.img {
+    width: 300px;
+    height: 225;
+    position: relative;
+   
+    overflow: hidden;
+}
+
+.txt {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+    bottom:50px;
+    text-align: center;
+    color: white;
+    padding:10px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+.img:hover div.txt {
+    opacity: 1;
+    transform: translateY(50px);
+    transition:ease-in-out 0.5s;
+}
+
+.img:hover img {
+    transform: scale(1.5);
+    transition: all ease-in-out 0.5s;
+
+
+}
