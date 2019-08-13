@@ -1,0 +1,38 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-image: url(https://br-art.vn/wp-content/uploads/2018/09/bo-anh-phong-canh-phuong-hoang-co-tran-vao-buoi-dem-cua-nag-quang-tu-3.jpg);
+}
+.img{
+	width: 100%;
+	height: auto;
+}
+.head{
+	text-align: center;
+	max-width: 100%;
+	color: #ffffff;
+	padding-top: 25px;
+	font-weight: 700;
+	font-size: 35px;
+	display: block;
+	margin-bottom: 60px;
+}
+.head2{
+	text-align: left;
+	max-width: 690px;
+	color: #ffffff;
+	font-size: 20px;
+	display: block;
+
+}
+.khung{
+	float: center;
+	background-color: rgba(0,0,0,0.6);
+	padding-left: 200px;
+	padding-right: 200px;
+}
+.picture{
+	min-width: 680px;
+}
