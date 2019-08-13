@@ -12,8 +12,8 @@ body {
 	width: 100vw;
 }
 .KhanhĐẹpTrai {
-	width: 700px;
-	height: 700px;
+	width: 750px;
+	height: 750px;
 	text-align: center;
 }
 
@@ -21,7 +21,7 @@ body {
 	height: 200px;
 	width: 200px;
 	border: 0px solid white;
-	margin: 2px;
+	margin: 5px;
 	float: left;
 	display: flex;
 	justify-content: center;
