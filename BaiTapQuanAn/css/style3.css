@@ -1,0 +1,155 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	background-image: url(http://thuthuatphanmem.vn/uploads/2018/06/18/hinh-nen-may-tinh-nhung-ngoi-sao-sang-mau-xanh-3d-cuc-dep_032713722.png);
+	margin:0px;
+}	
+ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	display:inline-block;
+}
+ul a{
+	text-decoration:none;
+	color: #ffffff;
+	display:block;
+	background: #76a27f;
+	border-bottom: 1.5px solid #ffffff;
+	line-height: 70px;
+}
+ul a:hover{
+	background: rgba(0,0,0,0.6);
+}
+li,i{
+	display:inline-block;
+	border-right:1px solid;
+	font-family:sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 19px;
+	padding: 24px;
+	cursor: pointer;
+}
+.menu1:hover i{
+	opacity:0.5;
+
+}
+
+nav{
+	background-color: #76a27f;
+	position:fixed;
+	top:0px;
+	width:100%;
+	box-shadow:0px 1px 4px gray;
+	z-index:10;
+	
+}
+.menu li{
+	position:relative;
+}
+.menu1:hover span{
+	opacity:0.4;
+
+}
+.lienhe{
+	position:absolute;
+	top:100%;
+	right:0%;
+	width: 402px;
+    text-align: left;
+    padding: 37px 24px;
+    background: #76a27f;
+    box-shadow: 5px 5px 9px black;
+    font-size: 17px;
+    line-height: 25px;
+    color: #ffffff;
+    display:none;
+}
+.menu1:hover>.lienhe{
+	display:block;
+}
+
+
+.menu2{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0%;
+	width:222px;
+	text-align:center;	
+	box-shadow: 2px 0px 6px black
+}
+
+.menu1:hover>.menu2{
+	display:block;
+}
+.menu{
+	text-align:right;
+	padding-right: 80px;
+	position:relative;
+	animation: menu_return 0.7s linear 1; 
+}
+@keyframes menu_return{
+	0%{
+		opacity:0;
+		transform: translateX(700px);
+	}
+}
+a {
+	text-decoration: none;
+	transition: 0.3s ease-in;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: 300px;
+	max-width: 100%;
+}
+.bodyweb{
+	background-color: rgba(0,0,0,0.2);
+	color: #ffffff;
+	max-width:1000px;
+	margin:auto;
+	margin-top:250px;
+}
+.sanpham img{
+	width:50%;
+	float:left;	
+	margin-right:30px;
+}
+
+.sanpham span{
+	color:red;
+	font-size:37px;
+}
+.sanpham strong{
+	font-size:20px;
+}
+.sanpham{
+	overflow:auto;
+	margin-bottom:86px;
+}
+.bot-web{
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+#footweb{
+  height:70px;
+  background: #76a27f;
+  clear: both;
+  color: #ffffff;
+  text-align: left;
+  padding-top: 0;
+}
+@keyframes logo_return{
+	0%{
+		opacity:0;
+		transform: translateX(-400px);
+}

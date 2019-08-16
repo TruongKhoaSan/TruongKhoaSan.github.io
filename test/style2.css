@@ -1,0 +1,82 @@
+.restaurant{
+	width:100%;
+}
+.nhahang{
+	margin-top: 126px;
+}
+.bodyweb{
+	max-width:1000px;
+	margin:auto;
+	margin-top:40px;
+}
+h1{
+	text-align:center;
+	text-transform: uppercase;
+    color: #952530;
+    margin-top:60px;
+    margin-bottom:60px;
+}
+.hotmenu{
+	display:flex;
+	
+}
+.hotmenu img{
+	width:100%;	
+	transition: 1s;
+}
+.hotmenu>a{
+	margin:9px;
+	border-radius:32px;
+	overflow: hidden;
+	position:relative;
+
+
+}
+.hotmenu>a:hover img{
+	transform:scale(1.2);
+	
+}
+.ten{
+	position:absolute;
+	bottom:18%;
+	left:10%;
+	color:white;
+	font-size:30px;
+	text-shadow: 3px 3px 3px black;
+	display:none;
+
+}
+.hotmenu>a:hover .ten{
+	display:block;
+}
+
+.khung{
+	overflow:auto;
+}
+.khung span{
+	margin:20px;
+	font-size: 29px;
+	font-weight: bold;
+	color:#565d42;
+
+}
+.khung img{
+	margin:20px;
+	max-width:50%;
+	box-shadow:4px 4px 13px #3a2626;	
+}
+
+.khonggian span,.bep span{
+	float:left;
+}
+.khonggian img,.bep img{
+	float:right;
+}
+
+.vuon img{
+	float:left;
+}
+.vuon span{
+	float:right;
+}
+

@@ -67,9 +67,9 @@ nav{
 
 .container>li>a{
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 900;
     line-height: 1.6;
-    padding:15px;
+    padding:25px;
     color: #ffffff;
     display:inline-block;
 }
@@ -79,8 +79,7 @@ nav{
   display:none;
   position:absolute;
   top: 100%;
-  left:0%;
-  width:654px;
+  width:250px;
   font-size: 15px;
   
 }
@@ -136,29 +135,6 @@ li>span{
     padding-right: 11px;
     display:none;
 }
-.main{
-    padding: 5px;
-    background-color: rgba(0,0,0,0.6);
-    width: 250px;
-    height: auto;
-    font-family: Roboto-Regular;
-    font-size: 20px;
-    line-height: 30px;
-    color: #ffffff;
-    cursor: pointer;
-}
-.neo{
-  position:relative;
-}
-.gan{
-  position:absolute;
-  top:0%;
-  left:100%;
-  display:none;
-}
-li:hover>.gan{
-  display:block;
-}
 
 li:hover{
   color: none;
@@ -170,19 +146,13 @@ li:hover>span{
 li:hover>a{
   color: #ffffff;
 }
-.khung{
-  padding-left: 200px;
-  padding-right: 200px;
-  height: 180px;
-  margin-top: 5px;
-  padding: 10px 0 10px 0;
-}
 .bot-web{
   width: 100%;
   position: fixed;
   bottom: 0px;
 }
 #footweb{
+  width: 100%;
   height:70px;
   background: rgba(0,0,0,0.6);
   clear: both;
@@ -220,7 +190,7 @@ li:hover>a{
   max-width:200px;
 }
 div.container2{
-    width: 900px;
+    width: 1000px;
     display: flex;
     flex-wrap: wrap;
     position: absolute;
@@ -251,7 +221,6 @@ img {
     bottom:50px;
     text-align: center;
     color: white;
-    padding:10px;
     box-sizing: border-box;
     opacity: 0;
 }

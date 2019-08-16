@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <title>Bài Tập Số Min</title>
+	 	<meta charset="utf-8">
+	</head>
+	<body>
+		<p id="mang"></p>
+		<p id="soNhoNhat"></p>
+		
+
+		<script type="text/javascript">
+			var m=[16,2,1996,69,96];
+			function minNumber(array)
+			{
+				array=array.sort(function(a, b){return a - b});
+				return array[0]
+			}
+			document.getElementById("mang").innerHTML="Trong các số sau "+m;
+			document.getElementById("soNhoNhat").innerHTML="Số nhỏ nhất là:"+minNumber(m);
+		</script>
+	</body>
+</html>
