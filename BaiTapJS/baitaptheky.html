@@ -6,18 +6,18 @@
 	</head>
 	<body>
 
-		<!-- Gõ lệnh làm tròn thì năm 2019 nó nhảy lên thế kỷ 22 , đây là phản khoa học thầy ơi -->
 
 		<script type="text/javascript">
 
 			function tinhtheky(y)
 			{
 				var theky=(y+99)/100;
+				theky=Math.floor(theky);
 				return theky;
 
 			}
 
-			document.write("( nếu làm tròn thì nó nhảy lên thế kỷ 22) vậy nên : Năm 2019 thuộc thế kỷ:"+tinhtheky(2019));
+			document.write("Năm 2019 thuộc thế kỷ:"+tinhtheky(2019));
 
 		</script>
 
