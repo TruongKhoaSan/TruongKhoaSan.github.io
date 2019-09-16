@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Super Calculator</title>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body>
+
+	<div class="calc">
+		<form name="form">
+			<p id="khanh"> Casio Fx Khanh Xịn Xò </p>
+				<p id="khanh2"> ISO 9000 - 9001 </p>
+   				<p id ="image"> <img src="https://kenh14cdn.com/thumb_w/600/749cfc2301/2015/09/16/image005-d2722.jpg" style="height:50px" > </p>
+			<input readonly class="calc-display">
+		</form>
+		<table>
+			
+			<tr>
+				<td><input type="button" value="AC" onclick="c()" ></td>
+				<td><input type="button" value="⌫" onclick="del()" ></td>
+				<td><input type="button" value="%" onclick="percent('/100')" ></td>
+				<td><input type="button" value="÷" onclick="insrt('/')" ></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="7" onclick="insrt(7)" ></td>
+				<td><input type="button" value="8" onclick="insrt(8)" ></td>
+				<td><input type="button" value="9" onclick="insrt(9)" ></td>
+				<td><input type="button" value="x" onclick="insrt('*')" ></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="4" onclick="insrt(4)" ></td>
+				<td><input type="button" value="5" onclick="insrt(5)" ></td>
+				<td><input type="button" value="6" onclick="insrt(6)" ></td>
+				<td><input type="button" value="-" onclick="insrt('-')" ></td>
+			</tr>
+
+			<tr>
+				<td><input type="button" value="1" onclick="insrt(1)" ></td>
+				<td><input type="button" value="2" onclick="insrt(2)" ></td>
+				<td><input type="button" value="3" onclick="insrt(3)" ></td>
+				<td><input type="button" value="+" onclick="insrt('+')" ></td>
+			</tr>
+
+			<tr>
+				<td colspan="2"><input type="button" value="0" onclick="insrt(0)" style="width: 158px"></td>
+				<td><input type="button" value="." onclick="insrt('.')" ></td>
+				<td><input type="button" value="=" onclick="eql(2)" ></td>
+				
+			</tr>
+
+			<tr>
+				<td href="#" id="change_theme" colspan="4"><input type="button" value="Change Theme" style="width: 320px" ></td>
+			</tr>
+
+		</table>
+		
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>
