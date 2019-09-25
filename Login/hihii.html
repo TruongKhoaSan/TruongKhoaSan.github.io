@@ -1,0 +1,141 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"
+            type="text/javascript"></script>
+        <script src="demoValidation.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <h1 id="solgan"> Wellcome Các Đạo Hữu </h1>
+
+
+            <form id="form" action="result.html" method="post">
+
+                <h2 id="information">✪ Tên Đăng Nhập</h2>
+                <input id="user" type="text" placeholder="Điền Giùm Cái Tên" name="user" required />
+
+
+
+                <h2 id="information">✪ Địa Chỉ Email</h2>
+                <input id="mail" type="mail" placeholder="Mail Chuẩn Nhé" name="mail" required />
+
+
+                <h2 id="information">✪ Mật Khẩu</h2>
+                <input id="pass" type="password" placeholder="Chớ Quên password" name="pass" required />
+
+
+                <h2 id="information">✪ Nhập Lại Mật Khẩu</h2>
+                <input id="re-password" type="password" placeholder="Nhập Lại Pass Cho Chắc Cốp" name="re-password"
+                    required />
+
+
+                <h2 id="information">✪ Tên Đầy Đủ</h2>
+                <input id="name" type="text" placeholder="Cả Họ Và Tên Nhé" name="name" required />
+
+
+                <h2 id="information">✪ Ngày Tháng Năm Sinh</h2><br />
+                <input id="date" type="date" name="gender" name="gender" required>
+
+
+                <div id="SEX">
+                    <h2 id="information">✪ Giới Tính</h2></br>
+                    <input type="radio" name="gender" value="male"> Nam Giới
+                    <input type="radio" name="gender" value="female"> Nữ Giới
+                    <input type="radio" name="gender" value="other"> Buê Đuê Giới
+                </div></br>
+
+                <h2 id="information">✪ Cậu Nhà Ở Đâu Thế ♪</h2>
+                <input id="where" type="text" placeholder="Có Số Nhà Càng Tốt" required name="where" />
+
+
+
+
+                <h2 id="information">✪ Số Phone</h2>
+                <input id="phone" type="num" placeholder="Số Phone Không có J Q K Đâu Nhé" required name="phone" />
+                <div id="notification"></div>
+
+
+                <input class="submit" type="submit" value="Đăng Nhập">
+            </form>
+
+            <script type="text/javascript">
+
+                $().ready(function () {
+                    $("#form").validate({
+                        rules: {
+                            "user": {
+                                required: true,
+                                maxlength: 15
+                            },
+                            "pass": {
+                                required: true,
+                                minlength: 8
+                            },
+                            "re-password": {
+                                required: true,
+                                equalTo: "#pass",
+                                minlength: 8
+
+
+                            },
+                            "mail": {
+                                required: true,
+                                email: true
+                            },
+                            "name": {
+                                required: true,
+                                rangelength: [6, 18]
+                            },
+                            "phone": {
+                                digits: true,
+                                maxlength: 10
+                            },
+                            "where": {
+                                required: true,
+                                rangelength: [6, 18]
+                            }
+                        },
+                        messages: {
+                            "user": {
+                                required: "Bắt buộc nhập username",
+                                maxlength: "Hãy nhập tối đa 15 ký tự"
+                            },
+                            "pass": {
+                                required: "Bắt buộc nhập password",
+                                minlength: "Hãy nhập ít nhất 8 ký tự"
+                            },
+                            "re-password": {
+                                required: "Hãy Nhập Lại Pass Đi Nào",
+                                equalTo: "Hai password phải giống nhau",
+                                minlength: 8
+
+                            },
+                            "mail": {
+                                required: "Vui Lòng Nhập Email",
+                                email: "Vui Lòng Nhập Lại Email"
+                            },
+                            "name": {
+                                required: "Không Nói Làm Sao Biết Tên Gì",
+                                rangelength: "Điêu Thế , Làm Gì Có Ai Tên Ngắn Như Này"
+                            },
+                            "phone": {
+                                digits: "Chỉ Được Nhập Số Thôi",
+                                maxlength: "Chỉ Được Nhập 10 Số Thôi"
+                            },
+                            "where": {
+                                required: "Đề Nghị Nhập Địa Chỉ",
+                                rangelength: "Nhập Chính Xác Địa Chỉ Nhé"
+                            }
+                        }
+                    });
+                });
+            </script>
+    </body>
+
+    </html>

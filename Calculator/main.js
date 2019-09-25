@@ -15,7 +15,7 @@ function del() {
 	$('.calc-display').val(value.substring(0, value.length - 1));
 }
 
-var color = ["#ff7979","#EE5A24","#F79F1F","#FFC312","#C4E538","#A3CB38","#009432",];
+var color = ["#ff7979","#EE5A24","#F79F1F","#FFC312","#C4E538","#A3CB38","#009432","#fff"];
 var i = 0;
 document.querySelector("#change_theme").addEventListener("click",function(){
   i = i < color.length ? ++i : 0;

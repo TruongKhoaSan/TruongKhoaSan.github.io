@@ -1,0 +1,116 @@
+
+body{
+    background-image: url(https://idigitalcitizen.files.wordpress.com/2010/09/hello-kitty-valentine-1920x1080.jpg);
+    margin: 0;
+    padding: 0;
+}
+#solgan{
+    width: 700px;
+    font-size: 55px;
+    color: azure;
+    margin-top: 30px;
+}
+#main{
+
+    width: 200px;
+    height: auto;
+    margin-left: 250px;
+}
+#form{
+    margin-top: 15px;
+    width: 200px;
+
+}
+#information{
+    color: #fff;
+    width: 300px;
+    margin: 0px;
+}
+#SEX{
+    color: #fff;
+    width: 400px;
+    font-size: 20px;
+}
+#name{
+    color: hotpink;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;;
+    width: 500px;
+    height: 35px;
+    background-color: aquamarine;
+
+}
+#user{
+    color: hotpink;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;;
+    width: 500px;
+    height: 35px;
+    background-color: aquamarine;
+}
+#pass{
+    color: hotpink;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;;
+    width: 500px;
+    height: 35px;
+    background-color: aquamarine;
+}
+#re-password{
+    color: hotpink;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;;
+    width: 500px;
+    height: 35px;
+    background-color: aquamarine;
+}
+#mail{
+    color: hotpink;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;;
+    width: 500px;
+    height: 35px;
+    background-color: aquamarine;
+}
+#phone{
+    color: hotpink;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;;
+    width: 500px;
+    height: 35px;
+    background-color: aquamarine;
+}
+#where{
+    color: hotpink;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;;
+    width: 500px;
+    height: 35px;
+    background-color: aquamarine;
+}
+#confirmpass{
+    color: hotpink;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;;
+    width: 500px;
+    height: 35px;
+    background-color: aquamarine; 
+}
+.submit{
+    background-color: rgb(235, 163, 211);
+    border-radius: 8px;
+    margin-left:  5px;
+    margin-top: 30px;
+    padding: 5px;;
+    width: 500px;
+    height: 45px;
+
+}
