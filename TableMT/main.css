@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+#slogan{
+    color: hotpink;
+    background-color: bisque;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.main-3 {
+    max-width: 100%;
+    padding: 0 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table thead tr {
+    background-color: hotpink;
+}
+
+table thead tr th {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 15px;
+    text-align: left;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #f8f8f8;
+} 
+
+table tbody tr td {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 15px;
+    text-align: left;
+}
+
+.function-icon {
+    color: #333;
+}
+
+.function-icon i {
+    margin-right: 5px;
+}
+
+.function-icon.edit {
+    color: #40aa26;
+}
+
+.function-icon.remove {
+    color: #ff7e67;
+}
+
+.function-icon.edit:after {
+    content: "|";
+    margin: 0 10px;
+    color: #333;
+}
+
+#main {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+#main.show {
+    display: flex!important;
+}
+
+#main.show .main-2 {
+    animation: slideDown 0.3s forwards;
+}
+
+#main .main-2 {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 14px 12px 45px -34px rgba(0,0,0,0.75);
+}
+
+
+#main-2{
+    border-radius: 8px;
+    background-color: #54a0ff;
+}
+#question{
+    font-size: 15px;
+    text-transform: uppercase;
+    border-bottom: 1px solid hotpink;
+}
+
+#accept{
+    margin-left: 15px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: aquamarine;
+}
+#cancel{
+    margin-left: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: deeppink;
+}
+
+#main.main-2.btn-group #cancel {
+    background-color: #ff7e67;
+}
+
+#sort-option {
+    margin-bottom: 30px;
+    border: 1px solid #dedede;
+    padding: 10px 15px;
+    
+}
+
+#sort-option:focus {
+    outline: 0;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0px); opacity: 1; }
+}
