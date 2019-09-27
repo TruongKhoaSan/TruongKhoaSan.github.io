@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="Utf-8"/>
+    <title>Thông Tin</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="result"><br/>
+        <h1 id="username">Nghiêng Người Chào Mừng  </h1>
+        <h1 id="slogan-2">Cảm Ơn Đã Đăng Ký</h1>		
+		<p id="information">Thông Tin Của Các Hạ Như Sau 	</p>
+		<p id="datee">Sinh ngày: </p><br/>
+		<p id="sexx">Giới tính: </p><br/>
+		<p id="emaill">Email: </p><br/>
+		<p id="wheree">Địa chỉ: </p><br/>
+        <p id="phonee"> Số Điện thoại: </p><br/>
+        <p id="pass">Mật Khẩu: </p>
+		
+    </div>
+    <a href="index.html" id="back">Quay Lại Đăng Ký</a>
+		<script>
+			let inf = decodeURIComponent(location.href);
+			inf = inf.slice(inf.indexOf('?') + 1).replace(/\+/g," ");;
+			let array = inf.split("&");
+			let result = {};
+			array.forEach(function(value){
+				let arr = value.split("=");
+				result[arr[0]] = arr[1];
+			});
+			$("#username").append(result.user);
+			$("#datee").append(result.date);
+			$("#birthmonth").append(result.birthmonth);
+			$("#birthyear").append(result.birthyear);
+			$("#sexx").append(result.gender);
+			$("#emaill").append(result.email);
+			$("#wheree").append(result.where);
+			$("#phonee").append(result.phone);
+            $("#pass").append(result.password);
+		</script>
+	</body>
+</html>

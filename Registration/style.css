@@ -1,0 +1,217 @@
+
+body{
+    background-image: url(https://idigitalcitizen.files.wordpress.com/2010/09/hello-kitty-valentine-1920x1080.jpg);
+    margin-top: 50px;
+    padding: 0;
+    
+
+}
+label {
+    color: #fff;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+label.error {
+    display: block;
+    color: #fff;
+    width: 70%;
+    font-size: 16px;
+    margin: 0px auto 5px auto;
+}
+#slogan{
+    color: #fff;
+    padding-top: 50px;
+    text-align: center;
+}
+#main-1{
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px 0px #fff;
+    width: 540px;
+    margin-left: 100px;
+}
+#main{
+    border-radius: 8px;
+    border: none;
+    width: 500px;
+    height: auto;
+}
+#form{
+    margin-top: 10px;
+    width: 500px;
+
+}
+#user{
+    color: #fff;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;;
+    width: 500px;
+    height: 35px;
+    background-color: aquamarine;
+}
+#date{
+    color: #757575;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;;
+    width: 500px;
+    height: 35px;
+    background-color: aquamarine;
+    text-transform: uppercase;
+
+}
+#sex{
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    color: #fff;
+}
+#password{
+    color: #fff;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;;
+    width: 500px;
+    height: 35px;
+    background-color: aquamarine;
+}
+#re-password{
+    color: #fff;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;;
+    width: 500px;
+    height: 35px;
+    background-color: aquamarine;
+}
+#email{
+    color: #fff;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;;
+    width: 500px;
+    height: 35px;
+    background-color: aquamarine;
+}
+#phone{
+    color: #fff;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;;
+    width: 500px;
+    height: 35px;
+    background-color: aquamarine;
+}
+#where{
+    color: #fff;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 5px;
+    width: 500px;
+    height: 35px;
+    background-color: aquamarine;
+}
+#submit{
+    box-shadow: 0px 0px 14px 0px #fff;
+    color: #fff;
+    background-color: rgb(235, 163, 211);
+    border-radius: 8px;
+    margin-left:  5px;
+    margin-top: 30px;
+    padding: 5px;;
+    width: 500px;
+    height: 45px;
+
+}
+#result{
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px 0px #fff;
+    width: 520px;
+    height: 760px;
+    margin-left: 100px;
+}
+#slogan-2{
+    padding-top: 30px;
+    padding-bottom: 5px;
+    color: #fff;
+    text-align: center;
+}
+#information{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 5px solid #fff;
+}
+#username{
+    color: #fff;
+    background-color: aquamarine;
+    font-size: 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px;
+}
+#datee{
+    color: #fff;
+    background-color: aquamarine;
+    font-size: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+}
+#sexx{
+    color: #fff;
+    background-color: aquamarine;
+    font-size: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+}
+
+#emaill{
+    color: #fff;
+    background-color: aquamarine;
+    font-size: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+}
+#wheree{
+    color: #fff;
+    background-color: aquamarine;
+    font-size: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+}
+#phonee{
+    color: #fff;
+    background-color: aquamarine;
+    font-size: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+}
+#pass{
+    color: #fff;
+    background-color: aquamarine;
+    font-size: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+}
+#back{
+    box-shadow: 0px 0px 14px 0px #fff;
+    color: #fff;
+    background-color: rgb(235, 163, 211);
+    border-radius: 8px;
+    margin-left: 280px;
+    padding: 10px;
+    height: 45px;
+}
