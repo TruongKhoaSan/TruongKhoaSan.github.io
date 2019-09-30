@@ -1,0 +1,16 @@
+
+.h2{
+    margin-left: 50px;
+}
+#myInput{
+    background-color: #000;
+    color: #fff;
+    width: 300px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    padding:  10px;
+    border-radius: 8px;
+}
+.thead-dark{
+    color: azure;
+}
