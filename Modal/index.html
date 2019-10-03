@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+
+        #main {
+            padding: 0px 200px 0 200px;
+        }
+        #main2{
+            padding: 10px;
+            background-color: aliceblue;
+        }
+
+        #slogan {
+            text-align: center;
+            color: chartreuse;
+            background-color: aliceblue;
+            font-size: 40px;
+        }
+
+        #myBtn {
+            max-width: 100%;
+            background-color: chartreuse;
+            border-radius: 10px;
+
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+
+        .modal-content {
+            text-align: center;
+            font-size: 25px;
+            background-color: #c9d8e4;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            max-width:  50%;
+        }
+
+
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        @media all and (min-width: 300px) and (max-width: 1920px){
+            #main{
+                width: 100%;
+                margin: auto;
+		        padding: 0;
+            }
+            #Main #myBtn{
+                width: 100%;
+                margin: auto;
+		        padding: 0;
+            }
+            #main #images{
+                width: 100%;
+                margin: auto;
+		        padding: 0;
+            }
+        }
+         #images{
+            width: 1485px;
+        }
+    </style>
+</head>
+
+<body>
+ 
+    <div id="main">
+            <img id="images" src="http://images.gosu.vn/uploads/33_cuu-am-chan-kinh/caibang3.jpg">
+        <h2 id="slogan">Đả Cẩu Bổng Pháp</h2>
+
+
+        <button id="myBtn">Nhấp Để Xem Các Chiêu Thức</button><br/>
+        <div id="main2">
+        <h3>Đả Cẩu Bổng Pháp là một trong những tuyệt chiêu trấn phái của Cái Bang. Song hành cùng đó là "Hàng Long Thập
+            Bát Chưởng". </h3>
+        <h3>Đả cẩu bổng pháp là bộ bổng pháp (côn, gậy) chỉ có bang chủ đời trước đích thân truyền thụ cho bang chủ đời
+            sau, là một loại côn pháp chí cao, bao đời Bang chủ Cái Bang nhờ nó mà nổi danh giang hồ. Đến đời Hồng Thất
+            Công, bang chủ thứ 18 của Cái Bang, bộ bổng pháp này mới thực sự uy trấn, và đến đời Hoàng Dung - con gái
+            của Đông Tà Hoàng Dược Sư thì được biết đến rộng rãi.</h3>
+        <h3>Tuy nói Đả cẩu bổng pháp không được truyền cho người khác trừ các bang chủ nhưng Hồng Thất Công từng dạy nó
+            cho Dương Quá.</h3>
+        <h3>Những cao thủ về bộ côn pháp này có thể kể đến như: Hồng Thất Công, Hoàng Dung, Tống Nguyên Ân (trưởng lão
+            đời thứ 12 của Cái Bang)... Đả Cẩu Bổng Pháp có tổng cộng 36 chiêu, mỗi chiêu có nhiều thức biến hóa khác
+            nhau tạo thành vô số chiêu thức tinh diệu. Đả Cẩu Bổng Pháp được thi triển theo đường lối "Tứ lạng bạt thiên
+            cân" (Bốn lạng bạt ngàn cân), võ công được áp dụng theo 8 chữ khẩu huyết (bát tự huyết): Buộc, Đập, Trói,
+            Đâm, Khều, Dẫn, Khóa, Xoay.</h3>
+            </div>
+
+        <div id="myModal" class="modal">
+
+
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>1. Ác Cẩu Lan Lộ</p>
+
+                <p>2. Áp Kiên Cẩu Bối (khẩu quyết chữ Khóa)</p>
+
+                <p>3. Bát Cẩu Triều Thiên (chữ Khóa)</p>
+
+                <p>4. Bát Thảo Tầm Xà (chữ Đâm)</p>
+
+                <p>5. Bổng Đả Ác Cẩu (chữ Đập)</p>
+
+                <p>6. Bổng Đả Song Khuyển (chữ Đập)</p>
+
+                <p>7. Lục Phản Cẩu Điện (chữ Đâm)</p>
+
+                <p>8. Ngao Khẩu Đoạt Trượng (Cướp gậy từ tay địch nhân)</p>
+
+                <p>9. Phản Lục Cẩu Điện</p>
+
+                <p>10. Phản Tiệt Cẩu Đồn</p>
+
+                <p>11. Tà Đả Cẩu Bối</p>
+
+                <p>12. Thiên Hạ Vô Cẩu (chữ Xoay)</p>
+
+               
+            </div>
+        </div>
+
+        <script>
+
+            var modal = document.getElementById("myModal");
+
+
+            var btn = document.getElementById("myBtn");
+
+            var span = document.getElementsByClassName("close")[0];
+
+            
+
+
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+
+</body>
+
+</html>
