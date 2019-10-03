@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <title>Slider Khanh Siêu Nhân</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        /* for touch screen */
+        touch-action: none;
+      }
+      body {
+        overflow: hidden;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background: #111;
+        -webkit-perspective: 1000px;
+        perspective: 1000px;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+      }
+      #drag-container,
+      #spin-container {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: auto;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform: rotateX(-10deg);
+        transform: rotateX(-10deg);
+      }
+      #drag-container img,
+      #drag-container video {
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        line-height: 200px;
+        font-size: 50px;
+        text-align: center;
+        -webkit-box-shadow: 0 0 8px #fff;
+        box-shadow: 0 0 8px #fff;
+        -webkit-box-reflect: below 10px
+          linear-gradient(transparent, transparent, #0005);
+      }
+      #drag-container img:hover,
+      #drag-container video:hover {
+        -webkit-box-shadow: 0 0 15px #fffd;
+        box-shadow: 0 0 15px #fffd;
+        -webkit-box-reflect: below 10px
+          linear-gradient(transparent, transparent, #0007);
+      }
+      #drag-container p {
+        font-family: Serif;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) rotateX(90deg);
+        transform: translate(-50%, -50%) rotateX(90deg);
+        color: #fff;
+      }
+      #ground {
+        width: 900px;
+        height: 900px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%) rotateX(90deg);
+        transform: translate(-50%, -50%) rotateX(90deg);
+        background: -webkit-radial-gradient(
+          center center,
+          farthest-side,
+          #9993,
+          transparent
+        );
+      }
+      #music-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      @-webkit-keyframes spin {
+        from {
+          -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+        }
+        to {
+          -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+        }
+      }
+      @keyframes spin {
+        from {
+          -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+        }
+        to {
+          -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+        }
+      }
+      @-webkit-keyframes spinRevert {
+        from {
+          -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+        }
+        to {
+          -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+        }
+      }
+      @keyframes spinRevert {
+        from {
+          -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+        }
+        to {
+          -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="drag-container">
+      <div id="spin-container">
+        <!-- Add your images (or video) here -->
+        <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.0-9/51206943_1185729624909727_6000004806398181376_n.jpg?_nc_cat=105&_nc_oc=AQl9zklJhmkCALEkdMnh3hnlpIJDmsUc8EdowJIsx6ncIjPL1RkzwMkk_zCLd0ueMig&_nc_ht=scontent.fhan5-6.fna&oh=0ad9507a8352879228eb68908fbf3c3e&oe=5E2E0413"
+        alt=""
+        />
+        <img src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.15752-9/71134662_1623875891076729_87931367962181632_n.jpg?_nc_cat=105&_nc_oc=AQnAvhN7CWUBxeTwQsSdMtpzkB2ZOet9BvpIgAJs8OPS87wsuVl-W3NmaMzRGrroW6o&_nc_ht=scontent.fhan5-6.fna&oh=bc15d674836805f24a8a9fdf50c687aa&oe=5E3B45ED"
+        alt=""
+        />
+        <img
+          src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.15752-9/71169177_387668031927292_3919828960988364800_n.jpg?_nc_cat=110&_nc_oc=AQkKjGlQSiapPquXr45ZwuntU-iyqXGnK4RtFgFLffWRDVNVrr10gDkVbRJZU1CJtdw&_nc_ht=scontent.fhan5-2.fna&oh=8aaee3e6a3905bd3619ba900991c13cb&oe=5DFC8B3F"
+          alt=""
+        />
+        <img
+          src="https://scontent.fhan5-6.fna.fbcdn.net/v/t1.15752-9/71091982_930816320608774_6859719296117899264_n.jpg?_nc_cat=107&_nc_oc=AQkDMSU8IAc9DOu64A_yEDb6rAZhB5DxpPK_zMJ1CAtfr0T444GQ06YX4snCbsChdoE&_nc_ht=scontent.fhan5-6.fna&oh=c3835ccd83bf5a09399cd27562f071a0&oe=5E35EEA4"
+          alt=""
+        />
+        <img
+          src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.15752-9/71017304_427963721178920_1776931655160692736_n.jpg?_nc_cat=109&_nc_oc=AQkmektKPePk2T-EPq8thmFPbUzDj5jnZ0cG7LwLEkCH2VnNc7SfpWrqoE4TL8tTeTs&_nc_ht=scontent.fhan5-1.fna&oh=29bc8ad6b84ba251f381a9d23ae95642&oe=5DFBAADF"
+          alt=""
+        />
+        <img
+          src="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.15752-9/70935183_2675742699116402_5829836235035639808_n.jpg?_nc_cat=109&_nc_oc=AQlrRq6SNLjONAhXxzE1WjvWzg4H07-IyQQvvLrpcb7nKXozXCuFeNQIjH6nCZ14osg&_nc_ht=scontent.fhan5-1.fna&oh=f605a73a0aedd071c8ee5babb3972a3c&oe=5E26ED4E"
+          alt=""
+        />
+        <img
+          src="https://scontent.fhan5-4.fna.fbcdn.net/v/t1.15752-9/72401946_2249522185301203_5556643823582445568_n.jpg?_nc_cat=104&_nc_oc=AQlCHZHs6xQe86E7OJV_4-et5s6yYPtz1EGTp8bZqWNf1Xe1h2vLTDbGeR3sTGVzx74&_nc_ht=scontent.fhan5-4.fna&oh=f9d70dd0d52cb5dd3ce20c958cbea059&oe=5E310586"
+          alt=""
+        />
+        <img
+          src="https://scontent.fhan5-3.fna.fbcdn.net/v/t1.15752-9/71199452_554771481926095_1490874472331214848_n.jpg?_nc_cat=111&_nc_oc=AQn6x63YLrGNMtZ3n60cqsIQEaImCsm9R8Sf09tsnqMsXneYUmPAiyuBc08G0lUoGvw&_nc_ht=scontent.fhan5-3.fna&oh=80244a4e11e2eda7d9f34f7053639db7&oe=5E37587E"
+          alt=""
+        />
+
+        <!-- Example image with link -->
+        <a
+          target="_blank"
+          href="https://scontent.fhan5-1.fna.fbcdn.net/v/t1.15752-9/71039173_494059374476272_6739146945505263616_n.jpg?_nc_cat=109&_nc_oc=AQkUJE_4G9PO0B6fOKw6A_igG_9pSMrmCvDO7IkjlmSji_eDJuAqfhKAyop0OwyAzrU&_nc_ht=scontent.fhan5-1.fna&oh=6ebf34fdb3c21900d4f59db716f858fb&oe=5E2A6BC8"
+        >
+          <img
+            src="https://scontent.fhan5-2.fna.fbcdn.net/v/t1.15752-9/71142190_436180097245950_4945835152661020672_n.jpg?_nc_cat=102&_nc_oc=AQkpmGKFEMBxwE5d0JxgKfNcC_lWs5aCcGBRKZYWkSeCdz7hKXH6nrOZWdmttyK6TQ4&_nc_ht=scontent.fhan5-2.fna&oh=9a7d06bbed356fe9834f1322abd2b527&oe=5DF28279"
+            alt=""
+          />
+        </a>
+
+        <!-- Example add video  -->
+
+
+        <!-- Text at center of ground -->
+        <p>Khanh Siêu Nhân</p>
+      </div>
+      <div id="ground"></div>
+    </div>
+
+    <div id="music-container"></div>
+
+    <!-- github corner (https://github.com/tholman/github-corners) -->
+    <a href="https://github.com/HoangTran0410/3DCarousel" target="_blank" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#000; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    </style>
+
+    <script>
+      // Author: Hoang Tran (https://www.facebook.com/profile.php?id=100004848287494)
+      // Github verson (1 file .html): https://github.com/HoangTran0410/3DCarousel/blob/master/index.html
+      // You can change global variables here:
+      var radius = 240; // how big of the radius
+      var autoRotate = true; // auto rotate or not
+      var rotateSpeed = -60; // unit: seconds/360 degrees
+      var imgWidth = 120; // width of images (unit: px)
+      var imgHeight = 170; // height of images (unit: px)
+      // Link of background music - set 'null' if you dont want to play background music
+      var bgMusicURL =
+        "https://api.soundcloud.com/tracks/143041228/stream?client_id=587aa2d384f7333a886010d5f52f302a";
+      var bgMusicControls = true; // Show UI music control
+      /*
+     NOTE:
+       + imgWidth, imgHeight will work for video
+       + if imgWidth, imgHeight too small, play/pause button in <video> will be hidden
+       + Music link are taken from: https://hoangtran0410.github.io/Visualyze-design-your-own-/?theme=HauMaster&playlist=1&song=1&background=28
+       + Custom from code in tiktok video  https://www.facebook.com/J2TEAM.ManhTuan/videos/1353367338135935/
+*/
+      // ===================== start =======================
+      setTimeout(init, 100);
+      var odrag = document.getElementById("drag-container");
+      var ospin = document.getElementById("spin-container");
+      var aImg = ospin.getElementsByTagName("img");
+      var aVid = ospin.getElementsByTagName("video");
+      var aEle = [...aImg, ...aVid]; // combine 2 arrays
+      // Size of images
+      ospin.style.width = imgWidth + "px";
+      ospin.style.height = imgHeight + "px";
+      // Size of ground - depend on radius
+      var ground = document.getElementById("ground");
+      ground.style.width = radius * 3 + "px";
+      ground.style.height = radius * 3 + "px";
+      function init(delayTime) {
+        for (var i = 0; i < aEle.length; i++) {
+          aEle[i].style.transform =
+            "rotateY(" +
+            i * (360 / aEle.length) +
+            "deg) translateZ(" +
+            radius +
+            "px)";
+          aEle[i].style.transition = "transform 1s";
+          aEle[i].style.transitionDelay =
+            delayTime || (aEle.length - i) / 4 + "s";
+        }
+      }
+      function applyTranform(obj) {
+        // Constrain the angle of camera (between 0 and 180)
+        if (tY > 180) tY = 180;
+        if (tY < 0) tY = 0;
+        // Apply the angle
+        obj.style.transform = "rotateX(" + -tY + "deg) rotateY(" + tX + "deg)";
+      }
+      function playSpin(yes) {
+        ospin.style.animationPlayState = yes ? "running" : "paused";
+      }
+      var sX,
+        sY,
+        nX,
+        nY,
+        desX = 0,
+        desY = 0,
+        tX = 0,
+        tY = 10;
+      // auto spin
+      if (autoRotate) {
+        var animationName = rotateSpeed > 0 ? "spin" : "spinRevert";
+        ospin.style.animation = `${animationName} ${Math.abs(
+          rotateSpeed
+        )}s infinite linear`;
+      }
+      // add background music
+      if (bgMusicURL) {
+        document.getElementById("music-container").innerHTML += `
+<audio src="${bgMusicURL}" ${
+          bgMusicControls ? "controls" : ""
+        } autoplay loop>    
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
+`;
+      }
+      // setup events
+      document.onpointerdown = function(e) {
+        clearInterval(odrag.timer);
+        e = e || window.event;
+        var sX = e.clientX,
+          sY = e.clientY;
+        this.onpointermove = function(e) {
+          e = e || window.event;
+          var nX = e.clientX,
+            nY = e.clientY;
+          desX = nX - sX;
+          desY = nY - sY;
+          tX += desX * 0.1;
+          tY += desY * 0.1;
+          applyTranform(odrag);
+          sX = nX;
+          sY = nY;
+        };
+        this.onpointerup = function(e) {
+          odrag.timer = setInterval(function() {
+            desX *= 0.95;
+            desY *= 0.95;
+            tX += desX * 0.1;
+            tY += desY * 0.1;
+            applyTranform(odrag);
+            playSpin(false);
+            if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
+              clearInterval(odrag.timer);
+              playSpin(true);
+            }
+          }, 17);
+          this.onpointermove = this.onpointerup = null;
+        };
+        return false;
+      };
+      document.onmousewheel = function(e) {
+        e = e || window.event;
+        var d = e.wheelDelta / 20 || -e.detail;
+        radius += d;
+        init(1);
+      };
+    </script>
+  </body>
+</html>
