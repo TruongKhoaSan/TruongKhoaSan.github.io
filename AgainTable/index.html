@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -13,7 +12,21 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Lục Hồng Đáng Xem</title>
     <script src="https://kit.fontawesome.com/0f1a2ee87e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <style>
+        .h2 {
+            margin-left: 50px;
+        }
+
+        #myInput {
+            background-color: #000;
+            color: #fff;
+            width: 300px;
+            margin-left: 50px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,9 +39,11 @@
                 <thead class="thead-dark">
                     <tr>
                         <th class="sort" onclick="sortIdols('name')">Họ tên&nbsp; <i class="fas fa-sort"></i></th>
-                        <th class="sort" onclick="sortIdols('birthYear')">Năm sinh&nbsp; <i class="fas fa-sort"></i></th>
+                        <th class="sort" onclick="sortIdols('birthYear')">Năm sinh&nbsp; <i class="fas fa-sort"></i>
+                        </th>
                         <th class="sort" onclick="sortIdols('email')">Email&nbsp; <i class="fas fa-sort"></i></th>
-                        <th class="sort" onclick="sortIdols('phone')">Số điện thoại&nbsp; <i class="fas fa-sort"></i></th>
+                        <th class="sort" onclick="sortIdols('phone')">Số điện thoại&nbsp; <i class="fas fa-sort"></i>
+                        </th>
                         <th></th>
                     </tr>
                 </thead>
@@ -115,7 +130,7 @@
             // Xóa dữ liệu trong mảng
             idols.splice(index, 1);
 
-            if (confirm("Thầy có chắc muốn trừ khử thanh niên này?")) {
+            if (confirm("Nỡ Lòng Nào Xóa")) {
                 // Cách 1: Render lại toàn bộ bảng dựa vào mảng sau khi bị xóa
                 // renderContent();
 
