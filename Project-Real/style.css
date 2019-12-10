@@ -1,0 +1,4463 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+HTML,BODY{cursor: url("https://2.bp.blogspot.com/-QSy3rzTMIfI/T4B6xsrVqlI/AAAAAAAAAt0/rxCbBtfJgPU/s1600/hand.gif"), auto;}
+
+
+body {
+    margin: 0
+}
+
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary {
+    display: block
+}
+
+audio,canvas,progress,video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+progress {
+    vertical-align: baseline
+}
+
+template,[hidden] {
+    display: none
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+a:active,a:hover {
+    outline-width: 0
+}
+
+abbr[title] {
+    border-bottom: 0;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b,strong {
+    font-weight: inherit
+}
+
+b,strong {
+    font-weight: bolder
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+mark {
+    background-color: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+code,kbd,pre,samp {
+    font-family: monospace,monospace;
+    font-size: 1em
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+button,input,select,textarea {
+    font: inherit;
+    margin: 0
+}
+
+optgroup {
+    font-weight: bold
+}
+
+button,input {
+    overflow: visible
+}
+
+button,select {
+    text-transform: none
+}
+
+button,html [type="button"],[type="reset"],[type="submit"] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+textarea {
+    overflow: auto
+}
+
+[type="checkbox"],[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+    opacity: .54
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+.atvImg {
+    transform-style: preserve-3d
+}
+
+.atvImg-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease-out;
+}
+
+.atvImg-container.over .atvImg-shadow {
+    box-shadow: 0 45px 100px #000,0 16px 40px #000;
+}
+
+.atvImg-layers {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.atvImg-rendered-layer {
+    position: absolute;
+    width: 104%;
+    height: 104%;
+    top: -2%;
+    left: -2%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all .1s ease-out;
+}
+
+.atvImg-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease-out;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+}
+
+img {
+    border: 0;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 650px;
+    margin: 0 auto;
+    visibility: hidden;
+}
+
+.image.image-intro-opening {
+    top: calc(50% - 325px);
+    right: 0;
+    z-index: 12;
+    cursor: pointer;
+}
+
+.image-intro {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 650px;
+    top: calc(50% - 325px);
+    right: 0;
+    z-index: 12;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .image.image-intro-opening {
+        top:calc(50% - 200px);
+        left: 0;
+        z-index: 12;
+        cursor: pointer;
+    }
+
+    .image-intro {
+        top: calc(50% - 200px);
+        left: calc(50% - 100px);
+        z-index: 12;
+        width: 200px;
+        height: 400px;
+    }
+
+    .image {
+        width: 200px;
+        height: 400px
+    }
+}
+
+.image-cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 650px;
+    margin: 0;
+    background: #0f0f0f;
+    z-index: 9999;
+    -webkit-clip-path: rect(0,320px,0,0);
+    clip-path: rect(0,320px,0,0);
+    clip: rect(0,320px,0,0)
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url(//da-ink.com/wp-content/themes/daink/css/../webfonts/31967B_4_0.eot);
+    src: url(//da-ink.com/wp-content/themes/daink/css/../webfonts/31967B_4_0.eot?#iefix) format("embedded-opentype"),url(//da-ink.com/wp-content/themes/daink/css/../webfonts/31967B_4_0.woff2) format("woff2"),url(//da-ink.com/wp-content/themes/daink/css/../webfonts/31967B_4_0.woff) format("woff"),url(//da-ink.com/wp-content/themes/daink/css/../webfonts/31967B_4_0.ttf) format("truetype"),url(//da-ink.com/wp-content/themes/daink/css/../webfonts/31967B_4_0.svg#wf) format("svg")
+}
+
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url(//da-ink.com/wp-content/themes/daink/css/../webfonts/31967B_F_0.eot);
+    src: url(//da-ink.com/wp-content/themes/daink/css/../webfonts/31967B_F_0.eot?#iefix) format("embedded-opentype"),url(//da-ink.com/wp-content/themes/daink/css/../webfonts/31967B_F_0.woff2) format("woff2"),url(//da-ink.com/wp-content/themes/daink/css/../webfonts/31967B_F_0.woff) format("woff"),url(//da-ink.com/wp-content/themes/daink/css/../webfonts/31967B_F_0.ttf) format("truetype"),url(//da-ink.com/wp-content/themes/daink/css/../webfonts/31967B_F_0.svg#wf) format("svg")
+}
+
+div.cs-select {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    text-align: left;
+    background: #161616;
+    z-index: 100;
+    width: 100%;
+    max-width: 300px;
+    min-width: 180px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+div.cs-select:focus {
+    outline: 0
+}
+
+.cs-select select {
+    display: none
+}
+
+.cs-select span {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.cs-select .cs-options span {
+    height: 40px;
+    line-height: 40px;
+    color: #3c3c3c;
+    -webkit-transition: all .25s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .25s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .25s cubic-bezier(0.615,.19,.305,.91)
+}
+
+.cs-options span:hover {
+    color: #fff;
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    transform: translateX(10px)
+}
+
+.cs-select>span::after,.cs-select .cs-selected span::after {
+    speak: none;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.cs-select>span::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 30px;
+    right: 25px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/icon-arrow-filters.svg);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: center;
+    -webkit-transition: all .25s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .25s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .25s cubic-bezier(0.615,.19,.305,.91)
+}
+
+.cs-select.cs-active>span::after {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg)
+}
+
+div.cs-active {
+    z-index: 200
+}
+
+.cs-select .cs-options {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    visibility: hidden
+}
+
+.cs-select.cs-active .cs-options {
+    visibility: visible
+}
+
+.cs-select ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+.cs-select li.cs-optgroup>span {
+    cursor: default
+}
+
+div.cs-skin-elastic {
+    background: transparent;
+    font-size: 15px;
+    color: #fff
+}
+
+.cs-skin-elastic>span {
+    background-color: #161616;
+    z-index: 100
+}
+
+.cs-skin-elastic>span::after {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.cs-skin-elastic .cs-options {
+    overflow: visible;
+    background: transparent;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: none
+}
+
+.cs-skin-elastic.cs-active .cs-options {
+    pointer-events: auto
+}
+
+.cs-skin-elastic .cs-options>ul::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-transform: scale3d(1,0,1);
+    transform: scale3d(1,0,1);
+    background: #000;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition: -webkit-transform .3s;
+    transition: transform .3s
+}
+
+.cs-skin-elastic.cs-active .cs-options>ul::before {
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+    -webkit-transition: none;
+    transition: none;
+    -webkit-animation: expand .6s ease-out;
+    animation: expand .6s ease-out
+}
+
+.cs-skin-elastic .cs-options ul li {
+    opacity: 0;
+    -webkit-transform: translate3d(0,-25px,0);
+    transform: translate3d(0,-25px,0);
+    -webkit-transition: opacity .15s,-webkit-transform .15s;
+    transition: opacity .15s,transform .15s
+}
+
+.cs-skin-elastic.cs-active .cs-options ul li {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-animation: bounce .6s ease-out;
+    animation: bounce .6s ease-out
+}
+
+.cs-skin-elastic .cs-options span {
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 2em auto;
+    padding: 10px 0 10px 25px
+}
+
+.cs-skin-elastic .cs-options span:hover,.cs-skin-elastic .cs-options li.cs-focus span,.cs-skin-elastic .cs-options .cs-selected span {
+    color: #fff
+}
+
+.cs-skin-elastic .cs-options .cs-selected span::after {
+    content: ''
+}
+
+@-webkit-keyframes expand {
+    0% {
+        -webkit-transform: scale3d(1,0,1)
+    }
+
+    25% {
+        -webkit-transform: scale3d(1,1.2,1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1,.85,1)
+    }
+
+    75% {
+        -webkit-transform: scale3d(1,1.05,1)
+    }
+
+    100% {
+        -webkit-transform: scale3d(1,1,1)
+    }
+}
+
+@keyframes expand {
+    0% {
+        -webkit-transform: scale3d(1,0,1);
+        transform: scale3d(1,0,1)
+    }
+
+    25% {
+        -webkit-transform: scale3d(1,1.2,1);
+        transform: scale3d(1,1.2,1)
+    }
+
+    50% {
+        -webkit-transform: scale3d(1,.85,1);
+        transform: scale3d(1,.85,1)
+    }
+
+    75% {
+        -webkit-transform: scale3d(1,1.05,1);
+        transform: scale3d(1,1.05,1)
+    }
+
+    100% {
+        -webkit-transform: scale3d(1,1,1);
+        transform: scale3d(1,1,1)
+    }
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translate3d(0,-25px,0);
+        opacity: 0
+    }
+
+    25% {
+        -webkit-transform: translate3d(0,10px,0)
+    }
+
+    50% {
+        -webkit-transform: translate3d(0,-6px,0)
+    }
+
+    75% {
+        -webkit-transform: translate3d(0,2px,0)
+    }
+
+    100% {
+        -webkit-transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translate3d(0,-25px,0);
+        transform: translate3d(0,-25px,0);
+        opacity: 0
+    }
+
+    25% {
+        -webkit-transform: translate3d(0,10px,0);
+        transform: translate3d(0,10px,0)
+    }
+
+    50% {
+        -webkit-transform: translate3d(0,-6px,0);
+        transform: translate3d(0,-6px,0)
+    }
+
+    75% {
+        -webkit-transform: translate3d(0,2px,0);
+        transform: translate3d(0,2px,0)
+    }
+
+    100% {
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+::-moz-selection {
+    color: #fff;
+    text-shadow: none
+}
+
+::selection {
+    color: #fff;
+    text-shadow: none
+}
+
+*:after,*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.clearfix:before,.clearfix:after {
+    display: table;
+    content: " "
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none
+}
+
+@media only screen and (min-width: 768) {
+    ::-webkit-scrollbar {
+        width:6px;
+        height: 4px
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #0f0f0f
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #fff
+    }
+
+    ::-webkit-resizer {
+        background: #0f0f0f
+    }
+
+    ::-webkit-scrollbar-corner {
+        background: #0f0f0f
+    }
+}
+
+html {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy-SemiBold";
+    font-size: 100%;
+    text-align: left;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/background.png);
+    background-color: #171717;
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    overflow-x: hidden
+}
+
+a,a:link,a:active,a:visited {
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    color: #3c3c3c;
+    -webkit-transition: all .25s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .25s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .25s cubic-bezier(0.615,.19,.305,.91)
+}
+
+@media only screen and (max-width: 600px) {
+    a,a:link,a:active,a:visited {
+        cursor:pointer
+    }
+}
+
+a:hover {
+    color: #fff
+}
+
+.full-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20
+}
+
+h1 {
+    font-family: "Playfair Display",serif;
+    font-size: 100px;
+    line-height: 80px;
+    color: #fff;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -3px;
+    line-height: 1;
+    white-space: normal;
+    text-align: left;
+    padding-bottom: 20px
+}
+
+@media only screen and (max-width: 960px) {
+    h1 {
+        font-size:80px;
+        line-height: 70px;
+        letter-spacing: -2px;
+        padding-bottom: 5px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size:50px;
+        line-height: 46px;
+        letter-spacing: -1px
+    }
+}
+
+h2 {
+    display: inline;
+    float: left;
+    font-family: "Gilroy-SemiBold";
+    font-size: 15px;
+    color: #fff;
+    font-weight: normal;
+    margin: 0;
+    padding: 0
+}
+
+h3 {
+    display: inline;
+    float: left;
+    font-family: "Gilroy-SemiBold";
+    font-size: 22px;
+    color: #fff;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    opacity: 0
+}
+
+h5 {
+    display: inline;
+    float: left;
+    font-family: "Gilroy-SemiBold";
+    font-size: 15px;
+    color: #fff;
+    font-weight: normal;
+    margin: 0;
+    padding: 0
+}
+
+h6 {
+    display: inline;
+    float: left;
+    font-family: "Gilroy-SemiBold";
+    font-size: 13px;
+    color: #a41318;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 1
+}
+
+h7 {
+    display: block;
+    font-family: "Gilroy-SemiBold";
+    font-size: 13px;
+    color: #a41318;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    text-align: center;
+    margin-top: 3px
+}
+
+p {
+    color: #3c3c3c;
+    font-family: "Gilroy-SemiBold";
+    font-size: 14px;
+    line-height: 28px
+}
+
+strong {
+    font-weight: normal;
+    color: #8b8b8b;
+    font-family: "Gilroy-SemiBold"
+}
+
+.no-border {
+    border: 0 !important
+}
+
+.pace {
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 6px;
+    width: 80px;
+    background: #fff;
+    overflow: hidden;
+    z-index: 99999;
+    display: none;
+    visibility: hidden
+}
+
+.pace .pace-progress {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    max-width: 80px;
+    position: fixed;
+    z-index: 99999;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    width: 100%;
+    background: #a41318;
+    z-index: 99999;
+    display: none;
+    visibility: hidden
+}
+
+.pace.pace-inactive {
+    display: none
+}
+
+.cover {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.cover-main {
+    background: #0f0f0f;
+    z-index: 999999997
+}
+
+.cover-dark {
+    background: #0f0f0f;
+    z-index: 999999995
+}
+
+.cover-red {
+    background: #a41318;
+    z-index: 999999993
+}
+
+.cover-gold {
+    background: #d4983b;
+    z-index: 999999991
+}
+
+.line-loader-container {
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    top: calc(50%);
+    left: calc(50% - 60px);
+    overflow: hidden;
+    z-index: 999;
+    background: #0f0f0f;
+    opacity: 0
+}
+
+.line-loader {
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    top: 0;
+    left: 0;
+    background: #fff
+}
+
+.highlight {
+    position: relative;
+    display: table;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    margin-bottom: 15px
+}
+
+html.browser-firefox .underline {
+    display: none !important
+}
+
+.underline {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+
+.underline-body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+
+.underline-intro {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 120px;
+    right: 0;
+    height: 64px;
+    z-index: 2000
+}
+
+header a {
+    display: block;
+    height: 100%
+}
+
+body.home header {
+    z-index: 99999
+}
+
+@media only screen and (max-width: 960px) {
+    header {
+        width:100%;
+        background: #000
+    }
+}
+
+.header-logo {
+    position: absolute;
+    right: 0;
+    width: 120px;
+    height: 64px;
+    top: 0;
+    background-image: url(imgProject/logo-reall.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center
+}
+
+.intro-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px 20px;
+    width: 24px;
+    height: 13px;
+    z-index: 9999;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/intro-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 24px 13px;
+    background-position: center;
+    cursor: pointer;
+    -webkit-transition: all .22s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .22s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .22s cubic-bezier(0.615,.19,.305,.91)
+}
+
+.intro-icon:hover {
+    -webkit-transform: scale(1.2) rotate(180deg);
+    -moz-transform: scale(1.2) rotate(180deg);
+    transform: scale(1.2) rotate(180deg)
+}
+
+.hamburger-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    z-index: 9999999 !important;
+    -webkit-transition: all .1s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .1s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .1s cubic-bezier(0.615,.19,.305,.91);
+    transform-origin: center
+}
+
+.hamburger-container.filter-active {
+    top: 8px
+}
+
+.hamburger-container:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+button {
+    outline: 0
+}
+
+.hamburger {
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity,-webkit-filter;
+    transition-property: opacity,filter;
+    transition-property: opacity,filter,-webkit-filter;
+    transition-duration: .75s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible
+}
+
+.hamburger-box {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 99999 !important
+}
+
+.hamburger-box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    -webkit-transition: all .25s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .25s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .25s cubic-bezier(0.615,.19,.305,.91);
+    -webkit-transform: translate3d(45%,45%,0) rotate(45deg);
+    -moz-transform: translate3d(45%,45%,0) rotate(45deg);
+    transform: translate3d(45%,45%,0) rotate(45deg)
+}
+
+.hamburger-box:hover:before {
+    -webkit-transform: translateY(-20%,-20%,0) rotate(45deg);
+    -moz-transform: translateY(-20%,-20%,0) rotate(45deg);
+    transform: translate3d(-20%,-20%,0) rotate(45deg)
+}
+
+.hamburger-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 29px 0 0 20px;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    z-index: 999
+}
+
+.hamburger-inner,.hamburger-inner::before,.hamburger-inner::after {
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    transition-duration: .15s;
+    transition-timing-function: ease
+}
+
+.hamburger-inner::before,.hamburger-inner::after {
+    content: "";
+    display: block
+}
+
+.hamburger-inner::before {
+    top: -6px
+}
+
+.hamburger-inner::after {
+    bottom: -6px
+}
+
+.hamburger--spin-r .hamburger-inner {
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(0.55,.055,.675,.19)
+}
+
+.hamburger--spin-r .hamburger-inner::before {
+    transition: top .1s .3s ease-in,opacity .1s ease-in
+}
+
+.hamburger--spin-r .hamburger-inner::after {
+    transition: bottom .1s .3s ease-in,-webkit-transform .3s cubic-bezier(0.55,.055,.675,.19);
+    transition: bottom .1s .3s ease-in,transform .3s cubic-bezier(0.55,.055,.675,.19);
+    transition: bottom .1s .3s ease-in,transform .3s cubic-bezier(0.55,.055,.675,.19),-webkit-transform .3s cubic-bezier(0.55,.055,.675,.19)
+}
+
+.hamburger--spin-r.is-active .hamburger-inner {
+    -webkit-transform: rotate(-225deg);
+    transform: rotate(-225deg);
+    transition-delay: .1s;
+    transition-timing-function: cubic-bezier(0.215,.61,.355,1)
+}
+
+.hamburger--spin-r.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top .1s ease-out,opacity .1s .1s ease-out
+}
+
+.hamburger--spin-r.is-active .hamburger-inner::after {
+    bottom: 0;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transition: bottom .1s ease-out,-webkit-transform .3s .1s cubic-bezier(0.215,.61,.355,1);
+    transition: bottom .1s ease-out,transform .3s .1s cubic-bezier(0.215,.61,.355,1);
+    transition: bottom .1s ease-out,transform .3s .1s cubic-bezier(0.215,.61,.355,1),-webkit-transform .3s .1s cubic-bezier(0.215,.61,.355,1)
+}
+
+#navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    z-index: 9999991 !important;
+    overflow: hidden;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%);
+    background: #0f0f0f;
+    overflow: hidden;
+    display: none
+}
+
+.navigation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%)
+}
+
+.nav-logo-container {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.nav-logo {
+    position: relative;
+    display: block;
+    width: 220px;
+    height: 96px;
+    background-image: url(imgProject/logo-reall.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    margin-left: 30px;
+    -webkit-transform: translateX(-120%);
+    -moz-transform: translateX(-120%);
+    transform: translateX(-120%)
+}
+
+.nav-logo a {
+    display: block;
+    height: 100%
+}
+
+.top-nav {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: 440px;
+    top: calc(50% - 220px);
+    z-index: 5
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+nav {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+nav a {
+    position: relative;
+    display: block;
+    margin: 12px auto;
+    outline: 0;
+    color: #3c3c3c;
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px
+}
+
+nav a span {
+    position: absolute;
+    z-index: 3;
+    margin-left: 30px
+}
+
+nav a:hover,nav a:focus {
+    outline: 0
+}
+
+.nav-animation a {
+    overflow: hidden;
+    padding: 0
+}
+
+.nav-animation a span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .18s cubic-bezier(0.615,.19,.305,.91)
+}
+
+.nav-animation li.selected a span::before,.nav-animation a span::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    color: #fff;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0)
+}
+
+.nav-animation li.selected a span,.nav-animation a:hover span,.nav-animation a:focus span {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%)
+}
+
+.nav-stripe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 50px;
+    z-index: 1;
+    -webkit-clip-path: rect(0,300px,50px,300px);
+    clip-path: rect(0,300px,50px,300px);
+    clip: rect(0,300px,50px,300px);
+    -webkit-transition: all .35s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .35s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .35s cubic-bezier(0.615,.19,.305,.91)
+}
+
+nav a:hover .nav-stripe,nav ul li.selected .nav-stripe,nav a.selected .nav-stripe {
+    -webkit-clip-path: rect(0,300px,50px,0px);
+    clip-path: rect(0,300px,50px,0px);
+    clip: rect(0,300px,50px,0px)
+}
+
+.stripe-tattoo-nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/stripe-01.png);
+    background-repeat: no-repeat;
+    background-size: 140px;
+    background-position: left center
+}
+
+.stripe-studio-nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/stripe-14.png);
+    background-repeat: no-repeat;
+    background-size: 180px;
+    background-position: left center
+}
+
+.stripe-news-nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/stripe-05.png);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: left center
+}
+
+.stripe-merch-nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/stripe-08.png);
+    background-repeat: no-repeat;
+    background-size: 110px;
+    background-position: left center
+}
+
+.stripe-contacts-nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/stripe-12.png);
+    background-repeat: no-repeat;
+    background-size: 140px;
+    background-position: left center
+}
+
+.typo-nav {
+    background-image: url(imgProject/BGGG\ -\ Copy.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%
+}
+
+@media only screen and (max-width: 1024px) {
+    .typo-nav {
+        opacity:.025 !important
+    }
+}
+
+html.browser-safari .typo-nav {
+    opacity: .025 !important
+}
+
+.open-nav {
+    opacity: 0;
+    -webkit-transform: scale(0.7) translateY(100%);
+    -moz-transform: scale(0.7) translateY(100%);
+    transform: scale(0.7) translateY(100%);
+    overflow: hidden
+}
+
+.lang-selector {
+    position: absolute;
+    top: calc(50% - 20px);
+    right: -35px;
+    width: 150px;
+    height: auto;
+    z-index: 9999;
+    transform-origin: center;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    transform: rotate(-90deg)
+}
+
+.nav-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%
+}
+
+@media only screen and (max-width: 960px) {
+    .nav-image {
+        display:none
+    }
+}
+
+.image-nav-default {
+    background: #000;
+    z-index: 99;
+    -webkit-box-shadow: 0 12px 32px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 12px 32px 0 rgba(0,0,0,0.75);
+    box-shadow: 0 12px 32px 0 rgba(0,0,0,0.75)
+}
+
+.image-nav-tattoo {
+    z-index: 1;
+    clip: rect(0px,260px,0px,0px)
+}
+
+.image-nav-studio {
+    z-index: 1;
+    clip: rect(0px,260px,0px,0px)
+}
+
+.image-nav-news {
+    z-index: 1;
+    clip: rect(0px,260px,0px,0px)
+}
+
+.image-nav-merch {
+    z-index: 1;
+    clip: rect(0px,260px,0px,0px)
+}
+
+.image-nav-contacts {
+    z-index: 1;
+    clip: rect(0px,260px,0px,0px)
+}
+
+.opening {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden
+}
+
+.opening:before {
+    content: '';
+    display: inline-block;
+    height: 90%;
+    vertical-align: middle;
+    margin-right: -.25em
+}
+
+@media only screen and (max-width: 960px) {
+    .opening {
+        height:70vh
+    }
+}
+
+.massive-typo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    transform: scale(0.85)
+}
+
+.massive-typo-intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    transform: scale(0.85)
+}
+
+.typo-tattoo {
+    background-image: url(imgProject/SF.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%
+}
+
+.typo-studio {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/typo-studio.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%
+}
+
+.typo-news {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/typo-news.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%
+}
+
+.typo-merch {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/typo-merch.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%
+}
+
+.typo-contacts {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/typo-contacts.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%
+}
+
+.top-container {
+    position: absolute;
+    width: 100%;
+    max-width: 1050px;
+    height: 650px;
+    top: calc(50% - 325px);
+    left: calc(50% - 525px)
+}
+
+.top-container.container-tattoo {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    top: calc(50% - 75px);
+    left: 50px;
+    z-index: 9
+}
+
+@media only screen and (max-width: 1100px) {
+    .top-container {
+        width:80%;
+        left: calc(50% - 40%);
+        height: 400px;
+        top: calc(50% - 200px)
+    }
+}
+
+.top-copy {
+    position: absolute;
+    display: block;
+    width: calc(100% - 370px);
+    height: auto;
+    top: calc(50% - 90px);
+    z-index: 5
+}
+
+@media only screen and (max-width: 960px) {
+    .top-copy {
+        width:calc(100%)
+    }
+}
+
+.top-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 650px;
+    z-index: 9
+}
+
+@media only screen and (max-width: 1100px) {
+    .top-image {
+        top:-100px
+    }
+}
+
+.image-news {
+    width: 350px
+}
+
+@media only screen and (max-width: 960px) {
+    .top-image {
+        display:none
+    }
+}
+
+.vertical-text {
+    position: absolute;
+    top: 6px;
+    left: -16px;
+    width: auto;
+    height: auto;
+    font-family: "Gilroy-ExtraBold";
+    color: #d4983b;
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-align: right;
+    text-transform: uppercase;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform-origin: left;
+    z-index: 999;
+    opacity: 0
+}
+
+.vertical-text-intro {
+    position: absolute;
+    top: calc(50% - 310px);
+    left: calc(50% - 30px);
+    width: auto;
+    height: auto;
+    font-family: "Gilroy-ExtraBold";
+    color: #d4983b;
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-align: right;
+    text-transform: uppercase;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform-origin: left;
+    z-index: 9999;
+    opacity: 0
+}
+
+.vertical-text-intro-new {
+    position: absolute;
+    top: calc(50% - 310px);
+    left: calc(50% - 30px);
+    width: auto;
+    height: auto;
+    font-family: "Gilroy-ExtraBold";
+    color: #d4983b;
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-align: right;
+    text-transform: uppercase;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform-origin: left;
+    z-index: 9999;
+    opacity: 0
+}
+
+@media only screen and (max-width: 600px) {
+    .vertical-text-intro {
+        top:20px;
+        left: calc(50% - 75px)
+    }
+
+    .vertical-text-intro-new {
+        top: 20px;
+        left: calc(50% - 75px)
+    }
+}
+
+.vertical-tattoo {
+    top: 32px
+}
+
+.big-stripe {
+    position: absolute;
+    top: calc(50% - 80px);
+    left: -75px;
+    width: 100%;
+    max-width: 600px;
+    height: 160px;
+    z-index: 1;
+    -webkit-clip-path: rect(0,600px,160px,600px);
+    clip-path: rect(0,600px,160px,600px);
+    clip: rect(0,600px,160px,600px);
+    white-space: nowrap
+}
+
+@media only screen and (max-width: 960px) {
+    .big-stripe {
+        position:absolute;
+        left: 0;
+        width: 80vw;
+        max-width: 80vw
+    }
+}
+
+.stripe-tattoo {
+    position: absolute;
+    width: 540px;
+    height: 160px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/stripe-03.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg)
+}
+
+.stripe-studio {
+    position: absolute;
+    width: 600px;
+    height: 160px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/stripe-12.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg)
+}
+
+.stripe-news {
+    position: absolute;
+    width: 400px;
+    height: 160px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/stripe-11.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top 10px;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg)
+}
+
+.stripe-merch {
+    position: absolute;
+    width: 480px;
+    height: 160px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/stripe-06.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg)
+}
+
+.stripe-contacts {
+    position: absolute;
+    width: 600px;
+    height: 160px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/stripe-08.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    transform: rotate(-3deg)
+}
+
+.line-scroll-down-container {
+    position: absolute;
+    width: 1px;
+    height: 120px;
+    bottom: 25px;
+    left: 50%;
+    overflow: hidden;
+    z-index: 999
+}
+
+.line-scroll-down {
+    position: absolute;
+    width: 1px;
+    height: 120px;
+    top: 0;
+    left: 0;
+    background: #fff
+}
+
+.image-cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 260px;
+    height: 100%;
+    background: #0f0f0f
+}
+
+.cover-news {
+    width: 380px
+}
+
+@media only screen and (max-width: 960px) {
+    .image-cover {
+        display:none
+    }
+}
+
+section {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    overflow: hidden
+}
+
+.section-right {
+    -webkit-transform: translateX(35%);
+    -moz-transform: translateX(35%);
+    transform: translateX(35%)
+}
+
+.section-left {
+    -webkit-transform: translateX(-35%);
+    -moz-transform: translateX(-35%);
+    transform: translateX(-35%)
+}
+
+@media only screen and (max-width: 960px) {
+    .section-right {
+        -webkit-transform:translateX(0%);
+        -moz-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+
+    .section-left {
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        transform: translateX(0%)
+    }
+}
+
+.text-area {
+    background: #0f0f0f;
+    padding: 160px 0;
+    width: 100%
+}
+
+@media only screen and (max-width: 960px) {
+    .text-area {
+        padding:100px 0
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .text-area {
+        padding:50px 0
+    }
+}
+
+.no-background {
+    background: none;
+    padding-top: 60px
+}
+
+.split-text,.center-text {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px
+}
+
+@media only screen and (max-width: 600px) {
+    .split-text,.center-text {
+        padding:0 20px
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .split-text {
+        max-width:calc(100% - 50px)
+    }
+}
+
+.body-link {
+    cursor: pointer
+}
+
+.body-link a {
+    color: #fff;
+    display: inline-block;
+    -webkit-transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .18s cubic-bezier(0.615,.19,.305,.91)
+}
+
+.body-link:hover.body-link a {
+    -webkit-transform: translateX(15px);
+    -moz-transform: translateX(15px);
+    transform: translateX(15px)
+}
+
+.body-link:after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    top: 6px;
+    margin-left: 8px;
+    width: 100px;
+    height: 20px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/icon-arrow.svg);
+    background-position: left center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    -webkit-transition: all .18s cubic-bezier(0.615,.19,.305,.91) .05s;
+    -moz-transition: all .18s cubic-bezier(0.615,.19,.305,.91) .05s;
+    transition: all .18s cubic-bezier(0.615,.19,.305,.91) .05s
+}
+
+.body-link:hover.body-link:after {
+    -webkit-transform: translateX(15px);
+    -moz-transform: translateX(15px);
+    transform: translateX(15px)
+}
+
+section.contact-last {
+    margin-bottom: 100px
+}
+
+.split-text-body a {
+    color: #d4983b
+}
+
+.text-block {
+    position: relative;
+    display: block;
+    margin: 250px auto;
+    width: calc(100% - 260px);
+    padding: 130px;
+    max-width: 380px;
+    height: auto;
+    background: #0f0f0f
+}
+
+.parallax-container {
+    position: absolute;
+    -webkit-transform: translate3d(-450px,-200px,0);
+    -moz-transform: translate3d(-450px,-200px,0);
+    transform: translate3d(-450px,-200px,0);
+    z-index: 1
+}
+
+.parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 600px;
+    background: #0f0f0f;
+    background: black;
+    -webkit-box-shadow: 0 12px 32px 0 rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 12px 32px 0 rgba(0,0,0,0.75);
+    box-shadow: 0 12px 32px 0 rgba(0,0,0,0.75);
+    -webkit-transform: translateY(200%);
+    -moz-transform: translateY(200%);
+    transform: translateY(200%);
+    z-index: 1
+}
+
+.parallax-image.parallax-google-maps {
+    top: -300px
+}
+
+.parallax-right {
+    left: 870px
+}
+
+@media only screen and (max-width: 960px) {
+    .text-block {
+        margin:100px auto;
+        width: calc(100% - 200px);
+        padding: 700px 100px 100px 100px
+    }
+
+    .parallax-container {
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0)
+    }
+
+    .parallax-image {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+        height: 600px;
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        transform: translateY(0%);
+        margin-top: -700px
+    }
+
+    .parallax-right {
+        left: 0
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .text-block {
+        margin:50px auto;
+        width: calc(100% - 80px);
+        padding: 550px 25px 25px 25px
+    }
+
+    .parallax-container {
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0)
+    }
+
+    .parallax-image {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        left: 0;
+        top: 175px;
+        width: 100%;
+        max-width: 295px;
+        height: 450px;
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        transform: translateY(0%);
+        margin-top: -700px
+    }
+
+    .parallax-image img {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        height: auto !important
+    }
+
+    .parallax-right {
+        left: 0
+    }
+
+    .bio-text-block,.text-block-contact {
+        padding-top: 30px
+    }
+
+    .contact-last {
+        margin-bottom: 20px
+    }
+
+    .contact-last .text-block {
+        padding-top: 30px;
+        padding-bottom: 45px
+    }
+
+    .contact-last .parallax-container {
+        position: relative
+    }
+
+    .contact-last .parallax-image {
+        position: relative;
+        display: block;
+        top: auto;
+        right: auto;
+        left: auto;
+        margin: 0 0 30px 0
+    }
+
+    .parallax-image.parallax-google-maps {
+        position: relative;
+        top: auto
+    }
+
+    .bio-image {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto
+    }
+
+    .bio-image .parallax-image {
+        position: relative;
+        display: block;
+        top: auto;
+        right: auto;
+        left: auto;
+        margin: 0 0 30px 0
+    }
+}
+
+.parallax-image img {
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0
+}
+
+footer {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #0f0f0f;
+    background-image: url(imgProject/Dota2_TI9Banner\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 120%;
+    z-index: 99999
+}
+
+.footer-top {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+    height: auto
+}
+
+.footer-nav {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    background: #0f0f0f;
+    border-bottom: 1px solid #1e1e1e
+}
+
+.footer-bottom {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 120px;
+    background: #0f0f0f
+}
+
+.footer-bottom-wrapper {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1050px
+}
+
+.footer-nav-main {
+    display: table;
+    width: auto
+}
+
+.footer-nav li {
+    display: inline-block
+}
+
+.footer-nav nav a {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding-right: 50px;
+    outline: 0;
+    color: #3c3c3c;
+    text-decoration: none;
+    height: 50px;
+    font-size: 14px;
+    line-height: 50px;
+    margin-top: 15px;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1
+}
+
+.footer-nav nav a span {
+    margin-left: 50px
+}
+
+@media only screen and (max-width: 960px) {
+    .footer-nav nav a span {
+        margin-left:25px
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .footer-nav-main {
+        display:table;
+        height: 300px
+    }
+
+    .footer-nav li {
+        display: block
+    }
+
+    .footer-nav nav a {
+        display: block;
+        text-align: center
+    }
+
+    .footer-nav {
+        height: auto;
+        padding-bottom: 20px
+    }
+}
+
+.footer-title {
+    position: relative;
+    display: block;
+    margin: 60px auto
+}
+
+.footer-title h4 {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    padding: 0
+}
+
+.footer-title h5 {
+    color: #a41318;
+    font: "Gilroy-ExtraBold";
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 5px;
+    font-weight: bolder
+}
+
+.footer-50 {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    margin-right: -4px;
+    vertical-align: top
+}
+
+@media only screen and (max-width: 700px) {
+    .footer-50 {
+        position:relative;
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 25px;
+        text-align: center
+    }
+}
+
+.footer-50 p {
+    display: block;
+    margin: 0 auto;
+    line-height: 20px;
+    width: 220px
+}
+
+.footer-50 p span {
+    color: #8b8b8b
+}
+
+.footer-50 p a {
+    color: #d4983b
+}
+
+.form {
+    position: relative;
+    display: block;
+    margin: 60px auto;
+    width: calc(100% - 50px);
+    max-width: 400px;
+    height: 72px;
+    background: #000;
+    cursor: pointer
+}
+
+input {
+    border: 0;
+    outline: 0;
+    background: #000;
+    color: #fff;
+    line-height: 70px;
+    height: 70px;
+    font-size: 14px;
+    padding-left: 35px;
+    width: calc(100% - 140px)
+}
+
+#form-email {
+    border: 0;
+    outline: 0;
+    background: #000;
+    color: #fff;
+    line-height: 70px;
+    height: 70px;
+    font-size: 14px;
+    padding-left: 35px;
+    width: calc(100% - 140px)
+}
+
+::-webkit-input-placeholder {
+    color: #3c3c3c;
+    opacity: 1
+}
+
+:-moz-placeholder {
+    color: #3c3c3c;
+    opacity: 1
+}
+
+::-moz-placeholder {
+    color: #3c3c3c;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #3c3c3c;
+    opacity: 1
+}
+
+#send-email {
+    position: relative;
+    float: right;
+    top: 0;
+    right: 0;
+    width: 72px;
+    height: 72px;
+    background-color: #a41318;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/icon-newsletter.svg);
+    background-size: 22px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    border: 0
+}
+
+.arrow-newsletter {
+    position: absolute;
+    top: 0;
+    right: 55px;
+    width: 35px;
+    height: 72px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/icon-arrow.svg);
+    background-size: 35px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    z-index: 99
+}
+
+.form:hover .arrow-newsletter {
+    -webkit-transform: translateX(8px);
+    -moz-transform: translateX(8px);
+    transform: translateX(8px)
+}
+
+.footer-33 {
+    position: relative;
+    float: left;
+    width: 33.333%;
+    height: auto;
+    color: #3c3c3c;
+    line-height: 120px;
+    font-size: 13px
+}
+
+@media only screen and (max-width: 700px) {
+    .footer-33 {
+        width:100%;
+        line-height: 70px
+    }
+
+    .footer-bottom {
+        height: 210px;
+        background: #0f0f0f
+    }
+}
+
+.footer-left {
+    position: relative;
+    left: 25px
+}
+
+@media only screen and (max-width: 700px) {
+    .footer-left {
+        text-align:center;
+        left: 0
+    }
+}
+
+.social-container {
+    position: relative;
+    display: table;
+    margin: 0 auto
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    margin: 12px;
+    width: 24px;
+    height: 24px;
+    font-size: 0;
+    text-indent: -9999px
+}
+
+.icon-cube {
+    position: relative;
+    -webkit-perspective: 70px;
+    -moz-perspective: 70px;
+    perspective: 70px;
+    overflow: visible
+}
+
+.icon-cube::before,.icon-cube::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    -webkit-transition: all .3s;
+    transition: all .3s
+}
+
+.icon-cube::before {
+    z-index: 2;
+    opacity: .15
+}
+
+.icon-cube::after {
+    z-index: 1;
+    opacity: 0;
+    -webkit-transform: translateY(48px) rotateX(-90deg);
+    -moz-transform: translateY(48px) rotateX(-90deg);
+    transform: translateY(48px) rotateX(-90deg)
+}
+
+.icon-cube:hover::before {
+    opacity: 0;
+    -webkit-transform: translateY(-48px) rotateX(90deg);
+    -moz-transform: translateY(-48px) rotateX(90deg);
+    transform: translateY(-48px) rotateX(90deg)
+}
+
+.icon-cube:hover::after {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    transform: rotateX(0)
+}
+
+.icon-cube.facebook::before,.icon-cube.facebook::after {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/social-facebook.svg);
+    background-size: 18px;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+.icon-cube.twitter::before,.icon-cube.twitter::after {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/social-twitter.svg);
+    background-size: 22px;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+.icon-cube.instagram::before,.icon-cube.instagram::after {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/social-instagram.svg);
+    background-size: 18px;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+.footer-right {
+    position: relative;
+    text-align: right;
+    right: 25px
+}
+
+@media only screen and (max-width: 700px) {
+    .footer-right {
+        text-align:center;
+        right: 0
+    }
+}
+
+.credits,.mark {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle
+}
+
+.mark {
+    width: 22px;
+    height: 32px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/mark.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-left: 8px;
+    margin-top: -6px
+}
+
+.copyright,.privacy {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 22px
+}
+
+.copyright {
+    cursor: inherit
+}
+
+.input {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    vertical-align: top
+}
+
+.input-field {
+    position: relative;
+    display: block;
+    float: right;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    font-weight: bold;
+    -webkit-appearance: none
+}
+
+.input-field:focus {
+    outline: 0
+}
+
+.input-label {
+    display: inline-block;
+    float: right;
+    padding: 0;
+    width: 100%;
+    color: #3c3c3c;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.input-label-content {
+    position: relative;
+    display: block;
+    padding: 100px 0;
+    width: 100%
+}
+
+.input-field-form {
+    width: 100%;
+    background: transparent;
+    padding: 0;
+    margin-bottom: 12px;
+    color: #fff
+}
+
+.input-label-form {
+    width: 100%;
+    position: absolute;
+    text-align: left;
+    font-size: 14px;
+    padding: 25px 0 10px;
+    pointer-events: none
+}
+
+.input-label-form::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #3c3c3c;
+    left: 0;
+    top: 100%;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition: -webkit-transform .3s,background-color .3s;
+    transition: transform .3s,background-color .3s
+}
+
+.input-label-content-form {
+    padding: 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transition: -webkit-transform .3s,color .3s;
+    transition: transform .3s,color .3s
+}
+
+.input-field-form:focus+.input-label-form .input-label-content-form,.input--filled .input-label-form .input-label-content-form {
+    -webkit-transform: translate3d(0,40px,0) scale3d(0.85,.85,1);
+    transform: translate3d(0,40px,0) scale3d(0.85,.85,1)
+}
+
+button {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 24px 18px 30px;
+    border: 0;
+    background: #a41318;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer
+}
+
+.send-form {
+    float: left
+}
+
+.send-form:after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    top: 6px;
+    margin-left: 6px;
+    width: 40px;
+    height: 20px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/icon-arrow.svg);
+    background-position: left center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    -webkit-transition: all .18s cubic-bezier(0.615,.19,.305,.91) .05s;
+    -moz-transition: all .18s cubic-bezier(0.615,.19,.305,.91) .05s;
+    transition: all .18s cubic-bezier(0.615,.19,.305,.91) .05s
+}
+
+.send-form:hover.send-form:after {
+    -webkit-transform: translateX(6px);
+    -moz-transform: translateX(6px);
+    transform: translateX(6px)
+}
+
+.input-form {
+    opacity: 0;
+    z-index: 3
+}
+
+.highlight-form {
+    position: relative;
+    display: block;
+    overflow: hidden
+}
+
+.underline-form {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    background: #000;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%);
+    z-index: 9
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border: 0
+}
+
+.filter-bar-container {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 80px;
+    background: #0f0f0f;
+    margin-bottom: 50px;
+    -webkit-transform: translateY(150%);
+    -moz-transform: translateY(150%);
+    transform: translateY(150%);
+    opacity: 0;
+    z-index: 10000
+}
+
+.sticky-wrapper {
+    margin-bottom: 40px
+}
+
+.sticky-wrapper.is-sticky {
+    position: relative
+}
+
+.sticky-wrapper.is-sticky .search-container {
+    margin-left: 60px
+}
+
+@media only screen and (max-width: 600px) {
+    .sticky-wrapper.is-sticky .search-container {
+        margin-left:40px
+    }
+}
+
+.search-container {
+    position: relative;
+    float: left;
+    width: auto;
+    height: 100%;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s
+}
+
+input {
+    outline: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 0
+}
+
+input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit
+}
+
+input::-webkit-search-decoration,input::-webkit-search-cancel-button {
+    display: none
+}
+
+input[type=search] {
+    border: 0;
+    padding: 0 10px 0 85px;
+    width: 400px;
+    height: 80px;
+    font-size: 14px;
+    font-family: "Gilroy-SemiBold";
+    font-weight: normal;
+    color: #fff;
+    background: #0f0f0f;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/icon-search.svg);
+    background-size: 28px 28px;
+    background-position: left 40px center;
+    background-repeat: no-repeat;
+    -webkit-transition: all .22s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .22s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .22s cubic-bezier(0.615,.19,.305,.91)
+}
+
+@media only screen and (max-width: 600px) {
+    input[type=search] {
+        width:240px
+    }
+}
+
+input[type=search]:hover {
+    color: #fff
+}
+
+input[type=search]:focus {
+    color: #fff
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+    opacity: .2;
+    -webkit-transition: all .55s;
+    -moz-transition: all .55s;
+    transition: all .55s
+}
+
+::-moz-placeholder {
+    color: #fff;
+    opacity: .2;
+    -webkit-transition: all .55s;
+    -moz-transition: all .55s;
+    transition: all .55s
+}
+
+:-ms-input-placeholder {
+    color: #fff;
+    opacity: .2;
+    -webkit-transition: all .55s;
+    -moz-transition: all .55s;
+    transition: all .55s
+}
+
+:-moz-placeholder {
+    color: #fff;
+    opacity: .2;
+    -webkit-transition: all .55s;
+    -moz-transition: all .55s;
+    transition: all .55s
+}
+
+input[type=search]:hover::-webkit-input-placeholder {
+    color: #fff;
+    opacity: .55
+}
+
+input[type=search]:hover::-moz-placeholder {
+    color: #fff;
+    opacity: .55
+}
+
+input[type=search]:hover:-ms-input-placeholder {
+    color: #fff;
+    opacity: .55
+}
+
+input[type=search]:hover:-moz-placeholder {
+    color: #fff;
+    opacity: .55
+}
+
+input[type=search]:focus::-webkit-input-placeholder {
+    opacity: 0
+}
+
+input[type=search]:focus::-moz-placeholder {
+    opacity: 0
+}
+
+input[type=search]:focus:-ms-input-placeholder {
+    opacity: 0
+}
+
+input[type=search]:focus:-moz-placeholder {
+    opacity: 0
+}
+
+.filter-container {
+    position: relative;
+    float: right;
+    width: auto;
+    height: 60px;
+    right: 60px;
+    margin: 10px 0 0 20px;
+    cursor: pointer
+}
+
+@media only screen and (max-width: 960px) {
+    .filter-container {
+        display:none
+    }
+}
+
+#masonry-container {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    margin-bottom: 50px;
+    z-index: 3
+}
+
+.grid-sizer,.masonry-grid {
+    width: 33.33%
+}
+
+.grid-sizer a,.masonry-grid a {
+    display: block
+}
+
+.grid-sizer,.masonry-grid {
+    margin-bottom: 50px
+}
+
+@media only screen and (max-width: 1150px) {
+    .grid-sizer,.masonry-grid {
+        width:50%
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-sizer,.masonry-grid {
+        width:100%;
+        margin: 0 0 20px 0 !important
+    }
+
+    .grid-sizer img,.masonry-grid img {
+        width: 100%
+    }
+}
+
+.masonry-module {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    background: #0f0f0f;
+    -webkit-box-shadow: 0 12px 32px 0 rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 12px 32px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 12px 32px 0 rgba(0,0,0,0.25);
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%)
+}
+
+@media only screen and (max-width: 400px) {
+    .masonry-module {
+        max-width:300px
+    }
+}
+
+.tattoo-size {
+    width: 21%;
+    margin: 0 2% 50px
+}
+
+.spacer-tattoo {
+    margin-bottom: 0 !important
+}
+
+@media only screen and (max-width: 1150px) {
+    .tattoo-size {
+        width:29%
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .tattoo-size {
+        width:45%;
+        margin-right: 0
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .tattoo-size {
+        width:100%
+    }
+
+    .spacer-tattoo {
+        display: none
+    }
+}
+
+.masonry-module.module-tattoo {
+    height: auto
+}
+
+.module-tattoo {
+    overflow: hidden
+}
+
+.tattoo-gap-big {
+    width: 24%;
+    height: 100px;
+    background: none;
+    opacity: 0
+}
+
+.tattoo-gap-small {
+    width: 24%;
+    height: 30px;
+    background: none;
+    opacity: 0
+}
+
+@media only screen and (max-width: 960px) {
+    .tattoo-gap-big {
+        height:50px
+    }
+
+    .tattoo-gap-small {
+        height: 0
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .tattoo-gap-big {
+        height:0
+    }
+}
+
+.news-size {
+    display: none;
+    width: 29%;
+    margin: 0 2% 50px
+}
+
+.news-size.selected {
+    display: block
+}
+
+@media only screen and (max-width: 1150px) {
+    .news-size {
+        width:45%
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .news-size {
+        width:45%;
+        margin-right: 0
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .news-size {
+        width:100%;
+        margin-right: 0
+    }
+
+    .news-size .masonry-module {
+        width: 250px
+    }
+}
+
+.news-image {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    max-width: 100%;
+    height: 350px;
+    overflow: hidden
+}
+
+.news-category {
+    position: absolute;
+    top: 6px;
+    left: -16px;
+    width: auto;
+    height: auto;
+    font-family: "Gilroy-ExtraBold";
+    color: #d4983b;
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-align: right;
+    text-transform: uppercase;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transform-origin: left;
+    z-index: 999
+}
+
+@media only screen and (max-width: 400px) {
+    .news-image {
+        width:250px;
+        height: 250px
+    }
+}
+
+.news-content-wrapper {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto
+}
+
+.news-content-wrapper h1,.news-content-wrapper h2,.news-content-wrapper h3,.news-content-wrapper h4,.news-content-wrapper h5,.news-content-wrapper h6 {
+    font-size: 32px;
+    letter-spacing: 1px
+}
+
+.news-contents {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: calc(100% - 40px);
+    height: auto;
+    padding: 15px 0 25px 0
+}
+
+.news-contents p {
+    margin: 0;
+    padding: 0
+}
+
+.news-contents h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 38px;
+    line-height: 42px;
+    font-family: "Playfair Display",serif;
+    color: #fff;
+    opacity: 1
+}
+
+.news-arrow {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 12px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/icon-arrow.svg);
+    background-position: right 25px center;
+    background-size: 40px;
+    background-repeat: no-repeat
+}
+
+.news-more {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+    margin-top: -120px;
+    margin-bottom: 160px;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%)
+}
+
+@media only screen and (max-width: 960px) {
+    .news-more {
+        margin-top:-60px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .news-more {
+        margin-top:0
+    }
+}
+
+.news-share {
+    position: relative;
+    display: inline-block;
+    margin-right: -4px;
+    width: 70%;
+    height: auto;
+    vertical-align: top
+}
+
+.news-back {
+    position: relative;
+    display: inline-block;
+    margin-right: -4px;
+    width: 30%;
+    height: 40px;
+    vertical-align: top;
+    cursor: pointer
+}
+
+@media only screen and (max-width: 600px) {
+    .news-share {
+        position:relative;
+        display: block;
+        margin: 0 auto;
+        width: 328px;
+        height: 40px;
+        left: 10px
+    }
+
+    .news-back {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 80px;
+        height: 40px;
+        margin-top: 4px
+    }
+}
+
+.trigger-container {
+    position: relative;
+    float: left;
+    height: 40px;
+    padding-right: 20px;
+    cursor: pointer;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%)
+}
+
+.view-trigger-container {
+    position: relative;
+    float: right;
+    width: auto;
+    height: 40px;
+    cursor: pointer
+}
+
+.view-icon {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    top: 0;
+    height: 30px;
+    overflow: hidden
+}
+
+.icon-main {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .12s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .12s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .12s cubic-bezier(0.615,.19,.305,.91);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%)
+}
+
+.icon-facebook-default {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/social-facebook.svg);
+    background-position: center 8px;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    opacity: .2
+}
+
+.icon-facebook-active {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/social-facebook.svg);
+    background-position: center 8px;
+    background-repeat: no-repeat;
+    background-size: 18px
+}
+
+.icon-twitter-default {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/social-twitter.svg);
+    background-position: center 9px;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    opacity: .2
+}
+
+.icon-twitter-active {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/social-twitter.svg);
+    background-position: center 9px;
+    background-repeat: no-repeat;
+    background-size: 22px
+}
+
+.icon-pinterest-default {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/social-pinterest.svg);
+    background-position: center 8px;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    opacity: .2
+}
+
+.icon-pinterest-active {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/social-pinterest.svg);
+    background-position: center 8px;
+    background-repeat: no-repeat;
+    background-size: 18px
+}
+
+.icon-masonry-default {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/icon-masonry.svg);
+    background-position: center 8px;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    opacity: .2
+}
+
+.icon-masonry-active {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/icon-masonry.svg);
+    background-position: center 8px;
+    background-repeat: no-repeat;
+    background-size: 18px
+}
+
+.icon-grid-default {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/icon-grid.svg);
+    background-position: center 8px;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    opacity: .2
+}
+
+.icon-grid-active {
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/icon-grid.svg);
+    background-position: center 8px;
+    background-repeat: no-repeat;
+    background-size: 18px
+}
+
+.view-trigger-main {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    top: 4px;
+    height: 30px;
+    line-height: 40px;
+    padding-left: 5px;
+    vertical-align: top;
+    color: #3c3c3c;
+    font-size: 15px;
+    overflow: hidden
+}
+
+@media only screen and (max-width: 600px) {
+    .view-trigger-main {
+        font-size:12px
+    }
+}
+
+.view-trigger {
+    position: relative;
+    display: block;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: top;
+    -webkit-transition: all .12s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .12s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .12s cubic-bezier(0.615,.19,.305,.91)
+}
+
+.trigger-container:hover .view-trigger {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+    color: #fff
+}
+
+.trigger-container:hover .icon-main {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    transform: translateY(0%)
+}
+
+.news-back-action {
+    position: relative;
+    float: right;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fff
+}
+
+.news-back-action:before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    top: 6px;
+    right: 5px;
+    width: 40px;
+    height: 20px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/icon-arrow.svg);
+    background-position: left center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    -webkit-transition: all .18s cubic-bezier(0.615,.19,.305,.91) .05s;
+    -moz-transition: all .18s cubic-bezier(0.615,.19,.305,.91) .05s;
+    transition: all .18s cubic-bezier(0.615,.19,.305,.91) .05s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.news-back:hover .news-back-action:before {
+    -webkit-transform: translateX(-15px) rotate(180deg);
+    -moz-transform: translateX(-15px) rotate(180deg);
+    transform: translateX(-15px) rotate(180deg)
+}
+
+.tattoo-back:hover .news-back-action:before {
+    -webkit-transform: translateX(-40px) rotate(180deg);
+    -moz-transform: translateX(-40px) rotate(180deg);
+    transform: translateX(-40px) rotate(180deg)
+}
+
+.tattoo-detail-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden
+}
+
+.tattoo-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 100vh;
+    background: #000;
+    z-index: 99;
+    -webkit-animation: opacity-animation 2s linear infinite;
+    -moz-animation: opacity-animation 2s linear infinite;
+    -ms-animation: opacity-animation 2s linear infinite;
+    -o-animation: opacity-animation 2s linear infinite;
+    -spec-animation: opacity-animation 2s linear infinite;
+    animation: opacity-animation 2s linear infinite
+}
+
+.tattoo-left {
+    position: relative;
+    float: left;
+    width: 450px;
+    height: 100vh;
+    z-index: 9
+}
+
+.tile {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 99999
+}
+
+@-webkit-keyframes opacity-animation {
+    0% {
+        background-color: #000
+    }
+
+    50% {
+        background-color: #161616
+    }
+
+    100% {
+        background-color: #000
+    }
+}
+
+@-moz-keyframes opacity-animation {
+    0% {
+        background-color: #000
+    }
+
+    50% {
+        background-color: #161616
+    }
+
+    100% {
+        background-color: #000
+    }
+}
+
+@-ms-keyframes opacity-animation {
+    0% {
+        background-color: #000
+    }
+
+    50% {
+        background-color: #161616
+    }
+
+    100% {
+        background-color: #000
+    }
+}
+
+@-o-keyframes opacity-animation {
+    0% {
+        background-color: #000
+    }
+
+    50% {
+        background-color: #161616
+    }
+
+    100% {
+        background-color: #000
+    }
+}
+
+@keyframes opacity-animation {
+    0% {
+        background-color: #000
+    }
+
+    50% {
+        background-color: #161616
+    }
+
+    100% {
+        background-color: #000
+    }
+}
+
+.photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transition: transform .25s ease-out;
+    -moz-transition: transform .25s ease-out;
+    transition: transform .25s ease-out;
+    cursor: move
+}
+
+.tattoo-right {
+    position: relative;
+    float: right;
+    width: 100%;
+    height: 100vh
+}
+
+@media only screen and (max-width: 960px) {
+    .tattoo-detail-container {
+        width:auto;
+        height: auto
+    }
+
+    .tattoo-cover {
+        display: none
+    }
+
+    .tattoo-left {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 80vw;
+        left: 10vw;
+        margin: 10vw 0;
+        height: 900px;
+        z-index: 9
+    }
+
+    .tattoo-right {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        width: 100vw;
+        height: 500px;
+        z-index: 9
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .tattoo-left {
+        position:relative;
+        display: block;
+        left: 0;
+        width: 100vw;
+        margin: 0;
+        height: 90vh;
+        z-index: 9
+    }
+
+    .tattoo-right {
+        height: 600px
+    }
+}
+
+.opening-tattoo {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden
+}
+
+.top-copy-tattoo {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    z-index: 5
+}
+
+.top-copy-tattoo h1 {
+    font-size: 55px;
+    padding: 0 0 20px 0
+}
+
+.top-copy-tattoo h2 {
+    color: #3c3c3c;
+    margin-right: 15px
+}
+
+@media only screen and (max-width: 960px) {
+    .top-copy-tattoo {
+        height:200px;
+        top: -120px
+    }
+
+    .top-copy-tattoo h1 {
+        font-size: 55px;
+        line-height: 50px;
+        padding: 0
+    }
+
+    .top-copy-tattoo h2 {
+        color: #3c3c3c
+    }
+}
+
+.tattoo-back {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: 999;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%)
+}
+
+.tattoo-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    background: #0f0f0f;
+    z-index: 9;
+    margin-top: 20px;
+    margin-right: 25px;
+    -webkit-clip-path: rect(0,0,70px,0);
+    clip-path: rect(0,0,70px,0);
+    clip: rect(0,0,70px,0)
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .tattoo-share {
+        margin-bottom:28px
+    }
+
+    .tattoo-share .view-trigger {
+        font-size: 13px !important
+    }
+}
+
+.tattoo-nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    z-index: 999;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    -webkit-clip-path: rect(0,0,70px,0);
+    clip-path: rect(0,0,70px,0);
+    clip: rect(0,0,70px,0)
+}
+
+@media only screen and (max-width: 600px) {
+    .tattoo-back {
+        position:absolute;
+        left: calc(50% - 40px);
+        margin: 0;
+        width: 80px
+    }
+
+    .tattoo-count {
+        position: absolute;
+        right: 5vw;
+        margin-top: -70px
+    }
+
+    .top-copy-tattoo {
+        height: 260px;
+        top: -50px
+    }
+
+    .tattoo-share {
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        width: 330px;
+        height: auto;
+        z-index: 9;
+        margin-left: 0;
+        margin-bottom: 0
+    }
+
+    .tattoo-nav {
+        position: absolute;
+        bottom: 80px;
+        left: calc(50% - 114px);
+        width: 228px;
+        height: auto;
+        z-index: 999;
+        margin-right: 0;
+        margin-bottom: 0
+    }
+}
+
+.count {
+    display: block;
+    margin: 4px auto;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+    font-family: "Gilroy-SemiBold";
+    color: #3c3c3c
+}
+
+.count-top {
+    margin-top: 14px;
+    color: #fff
+}
+
+.count-divider {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: 1px;
+    background: #3c3c3c
+}
+
+.tattoo-arrow {
+    display: inline-block;
+    margin-right: -4px;
+    width: 50px;
+    height: 60px;
+    line-height: 60px;
+    background: #0f0f0f;
+    font-size: 13px;
+    color: #3c3c3c;
+    text-align: center;
+    cursor: pointer
+}
+
+.arrow-left {
+    padding-left: 54px;
+    padding-right: 10px;
+    border-right: 1px solid #3c3c3c;
+    -webkit-transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .18s cubic-bezier(0.615,.19,.305,.91)
+}
+
+.arrow-left:before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 10px);
+    left: -46px;
+    width: 100px;
+    height: 20px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/icon-arrow.svg);
+    background-position: left center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    -webkit-transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.arrow-left:hover {
+    color: #fff
+}
+
+.arrow-left:hover.arrow-left:before {
+    -webkit-transform: translateX(-20px) rotate(180deg);
+    -moz-transform: translateX(-20px) rotate(180deg);
+    transform: translateX(-20px) rotate(180deg)
+}
+
+.arrow-right {
+    padding-right: 54px;
+    padding-left: 10px;
+    -webkit-transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .18s cubic-bezier(0.615,.19,.305,.91)
+}
+
+.arrow-right:after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -48px;
+    width: 100px;
+    height: 20px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/icon-arrow.svg);
+    background-position: left center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    -webkit-transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    -moz-transition: all .18s cubic-bezier(0.615,.19,.305,.91);
+    transition: all .18s cubic-bezier(0.615,.19,.305,.91)
+}
+
+.arrow-right:hover {
+    color: #fff
+}
+
+.arrow-right:hover.arrow-right:after {
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px)
+}
+
+.view-toggle-container {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 0
+}
+
+@media only screen and (max-width: 600px) {
+    .view-toggle-container {
+        display:none
+    }
+}
+
+.inner-trigger {
+    display: block;
+    margin: 0 auto;
+    width: 190px;
+    height: 40px;
+    padding-left: 20px
+}
+
+#intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 3500px;
+    height: 100vh
+}
+
+@media only screen and (min-width: 768) {
+    body.home #intro {
+        overflow-y:hidden
+    }
+}
+
+.intro-section {
+    position: relative;
+    float: left;
+    width: 500px;
+    height: 100vh;
+    margin-right: 150px;
+    z-index: 9999
+}
+
+@media only screen and (max-width: 960px) {
+    #intro {
+        width:2500px
+    }
+
+    .intro-section {
+        width: 350px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #intro {
+        width:100vw;
+        top: 60px;
+        height: auto;
+        overflow: hidden;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        z-index: 32
+    }
+
+    .intro-section {
+        width: 100vw;
+        height: 500px;
+        margin: 0;
+        padding: 0
+    }
+}
+
+.image-cover-intro {
+    position: absolute;
+    top: calc(50% - 325px);
+    right: 0;
+    width: 260px;
+    height: 676px;
+    background: #0f0f0f;
+    -webkit-clip-path: rect(0,380px,0px,0px);
+    clip-path: rect(0,380px,0px,0px);
+    clip: rect(0,380px,0px,0px);
+    z-index: 999
+}
+
+@media only screen and (max-width: 960px) {
+    .image-cover-intro {
+        width:200px;
+        top: calc(50% - 200px);
+        left: calc(50% - 100px);
+        height: 400px
+    }
+}
+
+.image-cover-intro-scroll {
+    position: absolute;
+    top: calc(50% - 325px);
+    right: 0;
+    width: 260px;
+    height: 100%;
+    background: #0f0f0f;
+    -webkit-clip-path: rect(0,380px,0px,0px);
+    clip-path: rect(0,380px,0px,0px);
+    clip: rect(0,380px,0px,0px);
+    z-index: 999
+}
+
+.highlight.highlight-intro {
+    position: absolute;
+    top: calc(50% + 260px);
+    right: -25px;
+    z-index: 999;
+    text-align: right
+}
+
+@media only screen and (max-width: 600px) {
+    .highlight.highlight-intro {
+        top:calc(50% + 150px);
+        right: 20%
+    }
+}
+
+.intro-stripe-1 {
+    position: absolute;
+    top: calc(50% - 400px);
+    right: -70px;
+    width: 400px;
+    height: 800px;
+    z-index: 3;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/stripe-diagonal-01.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center;
+    -webkit-clip-path: rect(0,400px,0,0);
+    clip-path: rect(0,400px,0,0);
+    clip: rect(0,400px,0,0)
+}
+
+@media only screen and (max-width: 1024px) {
+    .intro-stripe-1 {
+        display:none
+    }
+}
+
+.intro-stripe-2 {
+    position: absolute;
+    top: calc(50% - 400px);
+    right: -70px;
+    width: 400px;
+    height: 800px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/stripe-diagonal-02.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center;
+    -webkit-clip-path: rect(800px,400px,800px,0);
+    clip-path: rect(800px,400px,800px,0);
+    clip: rect(800px,400px,800px,0);
+    z-index: 5
+}
+
+@media only screen and (max-width: 1024px) {
+    .intro-stripe-2 {
+        display:none
+    }
+}
+
+.intro-stripe-3 {
+    position: absolute;
+    top: calc(50% - 400px);
+    right: -70px;
+    width: 400px;
+    height: 800px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/stripe-diagonal-03.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center;
+    -webkit-clip-path: rect(800px,400px,800px,0);
+    clip-path: rect(800px,400px,800px,0);
+    clip: rect(800px,400px,800px,0);
+    z-index: 5
+}
+
+@media only screen and (max-width: 1024px) {
+    .intro-stripe-3 {
+        display:none
+    }
+}
+
+.intro-stripe-4 {
+    position: absolute;
+    top: calc(50% - 400px);
+    right: -70px;
+    width: 400px;
+    height: 800px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/stripe-diagonal-04.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center;
+    -webkit-clip-path: rect(800px,400px,800px,0);
+    clip-path: rect(800px,400px,800px,0);
+    clip: rect(800px,400px,800px,0);
+    z-index: 5
+}
+
+@media only screen and (max-width: 1024px) {
+    .intro-stripe-4 {
+        display:none
+    }
+}
+
+.intro-stripe-5 {
+    position: absolute;
+    top: calc(50% - 400px);
+    right: -70px;
+    width: 400px;
+    height: 800px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/stripe-diagonal-05.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center;
+    -webkit-clip-path: rect(800px,400px,800px,0);
+    clip-path: rect(800px,400px,800px,0);
+    clip: rect(800px,400px,800px,0);
+    z-index: 5
+}
+
+@media only screen and (max-width: 1024px) {
+    .intro-stripe-5 {
+        display:none
+    }
+}
+
+.intro-stripe-6 {
+    position: absolute;
+    top: calc(50% - 400px);
+    right: -70px;
+    width: 400px;
+    height: 800px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/stripe-diagonal-06.png);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center;
+    -webkit-clip-path: rect(800px,400px,800px,0);
+    clip-path: rect(800px,400px,800px,0);
+    clip: rect(800px,400px,800px,0);
+    z-index: 5
+}
+
+@media only screen and (max-width: 1024px) {
+    .intro-stripe-6 {
+        display:none
+    }
+}
+
+.intro-indicator {
+    position: fixed;
+    bottom: 5px;
+    right: 0;
+    width: 120px;
+    height: 40px;
+    z-index: 99999
+}
+
+@media only screen and (max-width: 600px) {
+    .intro-indicator {
+        display:none
+    }
+}
+
+.drag-me {
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    font-family: #000;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 42px;
+    z-index: 99;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.drag-arrow {
+    position: absolute;
+    top: calc(50% - 9px);
+    left: 44px;
+    width: 32px;
+    height: 20px;
+    z-index: 91;
+    background: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    -webkit-animation: drag-arrow-loop 1.5s infinite cubic-bezier(0.615,.19,.305,.91);
+    -moz-animation: drag-arrow-loop 1.5s infinite cubic-bezier(0.615,.19,.305,.91);
+    animation: drag-arrow-loop 1.5s infinite cubic-bezier(0.615,.19,.305,.91)
+}
+
+@keyframes drag-arrow-loop {
+    0% {
+        transform: translateX(50%)
+    }
+
+    80% {
+        transform: translateX(0%)
+    }
+
+    90% {
+        transform: translateX(0%)
+    }
+
+    100% {
+        transform: translateX(50%)
+    }
+}
+
+#merch-container {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1200px;
+    height: auto
+}
+
+.merch-module {
+    position: relative;
+    display: block;
+    margin: 100px auto;
+    width: 95%;
+    max-width: 1000px;
+    height: 350px;
+    background: #0f0f0f;
+    -webkit-box-shadow: 0 12px 32px 0 rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 12px 32px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 12px 32px 0 rgba(0,0,0,0.25);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    transform: translateY(100%);
+    opacity: 0
+}
+
+@media only screen and (max-width: 600px) {
+    .merch-module {
+        margin:50px auto
+    }
+}
+
+.news-image.merch-image {
+    position: relative;
+    float: left;
+    width: 350px;
+    height: 350px;
+    overflow: hidden
+}
+
+.news-contents.merch-contents {
+    position: relative;
+    float: right;
+    width: calc(100% - 400px);
+    height: auto;
+    padding-left: 50px;
+    padding-top: 50px
+}
+
+.news-arrow.merch-arrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 12px;
+    background-image: url(//da-ink.com/wp-content/themes/daink/css/../img/assets/icon-arrow.svg);
+    background-position: right 50px center;
+    background-size: 40px;
+    background-repeat: no-repeat
+}
+
+@media only screen and (max-width: 600px) {
+    .merch-module {
+        height:600px;
+        -webkit-transform: translateY(100%);
+        -moz-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0
+    }
+
+    .news-image.merch-image {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        clear: both;
+        width: 100%;
+        height: 300px
+    }
+
+    .news-contents.merch-contents {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        clear: both;
+        width: 90%;
+        height: auto
+    }
+}
+
+.hidden {
+    display: none
+}
+
+#loader {
+    position: fixed;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999
+}
+
+.hidden {
+    display: none !important
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto
+}
+
+.invisible {
+    visibility: hidden
+}
+
+@media print {
+    blockquote,img,pre,tr {
+        page-break-inside: avoid
+    }
+
+    *,:after,:before {
+        background: 0 0 !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important
+    }
+
+    a,a:visited {
+        text-decoration: underline
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")"
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")"
+    }
+
+    a[href^="#"]:after,a[href^="javascript:"]:after {
+        content: ""
+    }
+
+    blockquote,pre {
+        border: 1px solid #999
+    }
+
+    thead {
+        display: table-header-group
+    }
+
+    img {
+        max-width: 100% !important
+    }
+
+    h2,h3,p {
+        orphans: 3;
+        widows: 3
+    }
+
+    h2,h3 {
+        page-break-after: avoid
+    }
+}
+
+#form-messages {
+    margin: 15px 0 0 0;
+    font-size: 12px
+}
+
+#form-messages.success {
+    color: #fff
+}
+
+#form-messages.error {
+    color: #a41318
+}
+
+.autocomplete-suggestions {
+    border: 0;
+    background: #0f0f0f;
+    color: #fff;
+    cursor: default;
+    overflow: auto;
+    margin-left: 40px;
+    padding: 10px 20px;
+    font-size: 12px
+}
+
+.autocomplete-suggestion {
+    padding: 10px 5px;
+    font-size: 1.2em;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.autocomplete-selected {
+    background: #0f0f0f
+}
+
+.autocomplete-suggestions strong {
+    font-weight: normal;
+    color: #d4983b
+}
+
+.nothing-found {
+    display: none;
+    color: #fff;
+    position: relative;
+    text-align: center
+}
+
+.nothing-found.show {
+    display: block;
+    margin: 0 0 40px;
+    padding: 40px
+}
+
+
+
+.parallax-image{
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .photobox__preview{
+    display: block;
+    max-width: 100%;
+  }
+  
+  .parallax-image:before{
+    content: "";
+  }
+  .parallax-container .photobox__preview{
+      transition: transform var(--photoboxAnimationDuration, .4s) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+    will-change: transform;
+      transform: scale(1);
+  }
+  
+  .parallax-container:hover .photobox__preview{
+    transform: scale(1.2);
+  }
+  
+  .parallax-container .parallax-image:before{
+    width: 100%;
+    height: 100%;
+    
+    opacity: 0;
+    background-color: var(--photoboxOverlay, rgba(0, 0, 0, .8));
+    clip-path: polygon(50% 10%, 15% 90%, 85% 90%);
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    
+    transition: transform calc(var(--photoboxAnimationDuration, .4s) / 2) ease-out,   opacity calc(var(--photoboxAnimationDuration, .4s) / 2) ease-out;
+    will-change: transform;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  
+  .parallax-container:hover .parallax-image:before{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(7);
+    transition-delay: calc(var(--photoboxAnimationDuration, .4s) / 2), 0s;
+    transition-duration: var(--photoboxAnimationDuration, .4s);
+  }
+  
+  .parallax-container .photobox__label{
+      font-size: 30px;
+    color: #ffffff;
+    width: 95%;
+    text-align: center;
+    
+    opacity: 0;  
+    transition: opacity calc(var(--photoboxAnimationDuration, .4s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9), transform calc(var(--photoboxAnimationDuration, .4s) / 4) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+    will-change: opacity, transform;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200%, -50%);
+    z-index: 2;
+  }
+  
+  .parallax-container:hover .photobox__label{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    transition-duration: calc(var(--photoboxAnimationDuration, .4s) / 2);
+    transition-delay: var(--photoboxAnimationDuration, .4s);
+  }
+  
+  

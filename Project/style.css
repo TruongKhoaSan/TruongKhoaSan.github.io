@@ -180,33 +180,83 @@ margin-right: 700px;
 .khung3{
   border-radius: 8px;
   margin: auto;
-  border-style: groove;
-  border-color: #cc3917;
+  padding: 25px;
+  
   color: #cc3917;
   text-align: left;
-  width: 1100px;
-  height: 500px;
+  width: 1120px;
+  height: 2000px;
   background-color: #000000;
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.25);
 }
+.khung4{
+  border-radius: 8px;
+  margin: auto;
+  
+  color: #cc3917;
+  text-align: center;
+  width: 900px;
+  height: 300px;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.25);
+}
+.khung5{
+  border-radius: 8px;
+  margin: auto;
+  padding: 20px;
+  
+  color: #cc3917;
+  text-align: center;
+  width: 450px;
+  height:50px;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.25);
+}
+.khung6{
+  border-radius: 8px;
+  margin: auto;
+  padding: 20px;
+  
+  color: #cc3917;
+  text-align: center;
+  width: 86px;
+  height:113px;
+  background-color: #383333;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.25);
+}
+
+
 .vaitro{
   box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.25);
   border-style: groove;
   border-radius: 8px;
   text-align: center;
-  font-size: 20px;
+  font-size: 14px;
   width: 250px;
   height: 30px;
   margin: 30px 50px 20px 20px;
   background-color: #000000;
   color: #cc3917;
 }
+::placeholder {
+  text-align: left;
+  font-size: 14px;
+  color: #ff6b81;
+}
 .findhero{
+  
   box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.25);
   border-style: groove;
   border-color: #cc3917;
   border-radius: 8px;
   text-align: center;
-  font-size: 20px;
+  font-size: 14px;
   width: 500px;
   height: 25px;
   margin: 30px 20px 20px 20px;
@@ -218,12 +268,43 @@ margin-right: 700px;
   border-style: groove;
   border-radius: 8px;
   text-align: center;
-  font-size: 20px;
+  font-size: 14px;
   width: 250px;
   height: 30px;
   margin: 30px 15px 20px 50px;
   background-color: #000000;
   color: #cc3917;
+}
+
+.Agi{
+  margin: 30px 0 0 20px;
+  width: 175px;
+}
+.Intel{
+  margin: 30px auto;
+  width: 175px;
+}
+.Streng{
+  margin: 30px 20px 0 0;
+  width: 175px;
+}
+
+
+.text1{
+  font-size: 24px;
+}
+.text2{
+  margin-left: 15px;
+  font-size: 20px;
+}
+.text3{
+  font-size: 17px;
+}
+.text4{
+  font-size: 14px;
+}
+.icon-hero{
+  height: 56.25px;
 }
 
 
@@ -543,3 +624,12 @@ a {
 .credit a:hover {
   text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
