@@ -72,7 +72,7 @@ $(document).ready(function () {
                     <td>${value.email}</td>
                     <td>${value.phone}</td>
                     <td>
-                        <a href="#" class="function-icon edit"><i class="far fa-edit"></i>Chỉnh sửa</a>
+                        <a href="#" id="myBtn" class="function-icon edit"><i class="far fa-edit"></i>Chỉnh sửa</a>
                         <a href="#" class="function-icon remove"><i class="far fa-edit"></i>Xóa</a>
                     </td>
                 </tr>`

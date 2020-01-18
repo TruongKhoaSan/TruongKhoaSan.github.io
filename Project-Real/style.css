@@ -1503,7 +1503,7 @@ html.browser-safari .typo-nav {
 }
 
 .typo-tattoo {
-    background-image: url(imgProject/SF.png);
+
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 80%
@@ -2930,7 +2930,7 @@ input[type=search]:focus:-moz-placeholder {
     }
 }
 
-.tattoo-size {
+. -size {
     width: 21%;
     margin: 0 2% 50px
 }

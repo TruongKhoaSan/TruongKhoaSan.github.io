@@ -8,6 +8,21 @@
     <title>Thập Đại Ma Thần</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+        .function-icon edit {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .function-icon edit:hover,
+        .function-icon edit:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div id="main">
@@ -28,6 +43,7 @@
             <option value="phone-sort">Sắp Xếp Theo Số Phone</option>
             <option value="email-sort">Sắp Xếp Theo Email</option>
         </select>
+
         <table>
             <colgroup>
                 <col style="width: 25%">
@@ -50,10 +66,72 @@
             </tbody>
         </table>
     </div>
+
+    <div id="myModal" class="modal">
+
+
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>1. Ác Cẩu Lan Lộ</p>
+
+                <p>2. Áp Kiên Cẩu Bối (khẩu quyết chữ Khóa)</p>
+
+                <p>3. Bát Cẩu Triều Thiên (chữ Khóa)</p>
+
+                <p>4. Bát Thảo Tầm Xà (chữ Đâm)</p>
+
+                <p>5. Bổng Đả Ác Cẩu (chữ Đập)</p>
+
+                <p>6. Bổng Đả Song Khuyển (chữ Đập)</p>
+
+                <p>7. Lục Phản Cẩu Điện (chữ Đâm)</p>
+
+                <p>8. Ngao Khẩu Đoạt Trượng (Cướp gậy từ tay địch nhân)</p>
+
+                <p>9. Phản Lục Cẩu Điện</p>
+
+                <p>10. Phản Tiệt Cẩu Đồn</p>
+
+                <p>11. Tà Đả Cẩu Bối</p>
+
+                <p>12. Thiên Hạ Vô Cẩu (chữ Xoay)</p>
+
+               
+            </div>
+        </div>
+    <script>
+
+            var modal = document.getElementById("myModal");
+
+
+            var btn = document.getElementById("myBtn");
+
+            var span = document.getElementsByClassName("close")[0];
+
+            
+
+
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
     <script src="main.js"></script>
+
 </body>
 </html>
